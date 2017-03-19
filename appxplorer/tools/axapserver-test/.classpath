@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="extLib/appstore-communication-dto-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="extLib/appstore-communication-protobuf-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="extLib/desfire-0.9.jar"/>
+	<classpathentry kind="lib" path="extLib/librarymanager-0.9.jar"/>
+	<classpathentry kind="lib" path="extLib/log4j-api-2.3.jar"/>
+	<classpathentry kind="lib" path="extLib/log4j-core-2.3.jar"/>
+	<classpathentry kind="lib" path="extLib/log4j-slf4j-impl-2.3.jar"/>
+	<classpathentry kind="lib" path="extLib/monorail-communication-dto-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="extLib/monorail-communication-protobuf-0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="extLib/protobuf-java-2.6.1.jar"/>
+	<classpathentry kind="lib" path="extLib/slf4j-api-1.7.12.jar"/>
+	<classpathentry kind="lib" path="extLib/tyrus-standalone-client-1.11.jar"/>
+	<classpathentry kind="lib" path="extLib/websocket-api-9.3.5.v20151012.jar"/>
+	<classpathentry kind="lib" path="extLib/websocket-client-9.3.5.v20151012.jar"/>
+	<classpathentry kind="lib" path="extLib/websocket-common-9.3.5.v20151012.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

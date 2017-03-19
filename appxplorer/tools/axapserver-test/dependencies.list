@@ -1,0 +1,14 @@
+t.log
+monorail-communication-dto-0.1-SNAPSHOT.jar
+monorail-communication-protobuf-0.1-SNAPSHOT.jar
+appstore-communication-dto-0.1-SNAPSHOT.jar
+appstore-communication-protobuf-0.1-SNAPSHOT.jar
+log4j-api-2.3.jar
+log4j-core-2.3.jar
+log4j-slf4j-impl-2.3.jar
+protobuf-java-2.6.1.jar
+slf4j-api-1.7.12.jar
+tyrus-standalone-client-1.11.jar
+websocket-api-9.3.5.v20151012.jar
+websocket-client-9.3.5.v20151012.jar
+websocket-common-9.3.5.v20151012.jar

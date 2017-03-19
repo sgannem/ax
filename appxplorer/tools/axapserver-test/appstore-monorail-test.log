@@ -1,0 +1,2286 @@
+2017-03-01T07:37:55,516 [main] (sid=) INFO  c.a.i.s.u.AppstoreApplication:42 #Application is started....
+2017-03-01T07:37:56,686 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T07:37:56,702 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:47 #Application window is opened
+2017-03-01T07:37:56,717 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreProperties:34 #Properties:{appstore.demo.cardissuer1.ndef.msg=wss://localhost:8443/store-server/cardissuers/demo, appstore.demo.appprovider.server=wss://localhost:8443/trustidpersoserver/, app.version=0.1, appstore.certificate.trust.password=test123, appstore.application.aid.tobedeleted=15802656, app.name=appstore-monorail-test, appstore.certificate.file.path=C:/trustid/trustidpersoserver-test/conf/, nfc.reader.name=BROADCOM NFC Smartcard Reader 1, appstore.certificate.file.name=truststore.jks, appstore.approved.application.id=1}
+2017-03-01T07:37:56,717 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:37:56,717 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T07:37:56,717 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T07:37:56,717 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:37:56,717 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T07:37:56,717 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:38:01,133 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T07:38:01,133 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T07:38:01,149 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:268 #AppstoreClient.run() method is called
+2017-03-01T07:38:01,149 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:271 #Command:CARD_STATE
+2017-03-01T07:38:01,149 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:244 #createWebSocketClient() method is called
+2017-03-01T07:38:01,165 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:248 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:38:01,181 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:274 #connecting to websocket...
+2017-03-01T07:38:01,983 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:355 #Error occured during establishing websocket connectionjavax.websocket.DeploymentException: Handshake error.
+2017-03-01T07:39:02,575 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T07:39:02,590 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:39:02,590 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T07:39:02,590 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T07:39:02,590 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:39:02,590 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T07:39:02,590 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:39:02,701 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T07:39:02,701 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T07:39:02,747 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:02,747 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:02,981 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:02,981 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,044 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,044 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,200 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,200 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,200 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,200 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,231 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,231 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,231 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\220\000"
+}
+
+2017-03-01T07:39:03,231 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,262 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,262 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,262 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220j\000\000\000"
+}
+
+2017-03-01T07:39:03,262 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,278 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,278 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,278 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\373@\217Qj^\221\000"
+}
+
+2017-03-01T07:39:03,278 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,293 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,293 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,293 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220Z\000\000\003\361! \000"
+}
+
+2017-03-01T07:39:03,293 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,309 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,309 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,309 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\221\240"
+}
+
+2017-03-01T07:39:03,309 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,325 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,325 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,340 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: UPDATE_APPLICATION_RESPONSE
+statusCode {
+  success: false
+  errorCode: UNKNOWN_ERROR
+}
+updateApplicationResponse {
+  aid: 2105841
+}
+
+2017-03-01T07:39:03,340 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,356 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,356 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,449 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,465 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,465 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,543 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,621 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:03,694 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,694 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,694 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,694 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,710 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,710 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,710 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,710 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,710 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,710 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,788 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,866 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:03,944 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:03,960 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:04,022 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:04,100 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,089 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T07:39:11,104 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:39:11,104 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T07:39:11,104 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T07:39:11,104 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:39:11,104 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T07:39:11,104 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T07:39:11,120 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T07:39:11,120 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T07:39:11,120 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,120 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,246 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\220\000"
+}
+
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220j\000\000\000"
+}
+
+2017-03-01T07:39:11,261 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\373@\217Qj^\221\000"
+}
+
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220Z\000\000\003\361! \000"
+}
+
+2017-03-01T07:39:11,277 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,293 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,293 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,293 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\221\240"
+}
+
+2017-03-01T07:39:11,293 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,308 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,308 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,308 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: UPDATE_APPLICATION_RESPONSE
+statusCode {
+  success: false
+  errorCode: UNKNOWN_ERROR
+}
+updateApplicationResponse {
+  aid: 2105841
+}
+
+2017-03-01T07:39:11,308 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,308 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,308 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,417 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,417 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,417 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,417 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,433 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,433 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,433 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,433 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,433 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,433 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,511 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,511 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,511 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,511 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,527 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,527 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,527 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,527 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,527 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,527 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,605 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,620 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,620 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,683 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,745 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,745 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,745 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,745 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,745 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,745 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,761 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,761 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,761 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,761 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,839 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,839 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,839 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,839 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,854 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,854 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,854 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,854 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,854 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,854 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,917 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,917 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,917 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,917 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,932 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,932 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,932 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,932 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,932 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,932 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T07:39:11,995 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T07:39:12,057 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T07:39:12,057 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T07:39:12,057 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T07:39:12,057 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T07:39:12,073 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T07:39:12,073 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T07:39:12,073 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T07:39:12,073 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:41,516 [main] (sid=) INFO  c.a.i.s.u.AppstoreApplication:42 #Application is started....
+2017-03-01T11:19:42,126 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:19:42,126 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:47 #Application window is opened
+2017-03-01T11:19:42,142 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreProperties:34 #Properties:{appstore.demo.cardissuer1.ndef.msg=wss://localhost:8443/store-server/cardissuers/demo, appstore.demo.appprovider.server=wss://localhost:8443/trustidpersoserver/, app.version=0.1, appstore.certificate.trust.password=test123, appstore.application.aid.tobedeleted=15802656, app.name=appstore-monorail-test, appstore.certificate.file.path=C:/trustid/trustidpersoserver-test/conf/, nfc.reader.name=BROADCOM NFC Smartcard Reader 1, appstore.certificate.file.name=truststore.jks, appstore.approved.application.id=1}
+2017-03-01T11:19:42,142 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:42,142 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:19:42,142 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:19:42,142 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:42,142 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:19:42,142 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:42,251 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:19:42,251 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:19:42,266 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:268 #AppstoreClient.run() method is called
+2017-03-01T11:19:42,282 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:271 #Command:CARD_STATE
+2017-03-01T11:19:42,282 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:244 #createWebSocketClient() method is called
+2017-03-01T11:19:42,298 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:248 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:42,313 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:274 #connecting to websocket...
+2017-03-01T11:19:43,297 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:355 #Error occured during establishing websocket connectionjavax.websocket.DeploymentException: Handshake error.
+2017-03-01T11:19:46,747 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:19:46,778 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:46,778 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:19:46,778 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:19:46,778 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:46,778 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:19:46,778 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:46,794 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:19:46,794 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:19:46,794 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:46,795 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:47,013 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,013 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:47,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:47,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,279 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,279 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,279 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\220\000"
+}
+
+2017-03-01T11:19:47,279 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,294 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,294 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,294 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220j\000\000\000"
+}
+
+2017-03-01T11:19:47,294 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,310 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,310 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,310 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\001\002\003\221\000"
+}
+
+2017-03-01T11:19:47,310 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,325 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,325 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,325 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220Z\000\000\003\361! \000"
+}
+
+2017-03-01T11:19:47,341 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,341 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,341 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,341 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\221\240"
+}
+
+2017-03-01T11:19:47,341 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,357 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,357 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,357 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: UPDATE_APPLICATION_RESPONSE
+statusCode {
+  success: false
+  errorCode: UNKNOWN_ERROR
+}
+updateApplicationResponse {
+  aid: 2105841
+}
+
+2017-03-01T11:19:47,357 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,372 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:47,372 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:47,482 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,482 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:47,497 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:47,591 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:47,684 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:47,794 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,794 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,794 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:47,794 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,794 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,794 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,809 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:47,809 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,809 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:47,809 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:47,873 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,873 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,873 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:47,873 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,888 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,888 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,888 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:47,888 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,888 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:47,888 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:47,998 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:48,076 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:48,154 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:48,232 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:48,232 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:48,232 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:48,232 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:48,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:48,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:48,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:48,247 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:59,283 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:19:59,298 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:59,298 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:19:59,298 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:19:59,298 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:59,298 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:19:59,298 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:19:59,408 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:19:59,408 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:19:59,408 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:59,408 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:59,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:59,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:59,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:59,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:59,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:59,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:59,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:59,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\220\000"
+}
+
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220j\000\000\000"
+}
+
+2017-03-01T11:19:59,533 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:59,549 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:59,549 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:59,549 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\001\002\003\221\000"
+}
+
+2017-03-01T11:19:59,549 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:59,580 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:59,580 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:59,580 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: REMOVE_APPLICATION_RESPONSE
+statusCode {
+  success: false
+  errorCode: APPLICATION_DOES_NOT_EXIST
+}
+removeApplicationResponse {
+  aid: 2105841
+}
+
+2017-03-01T11:19:59,580 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:59,580 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:59,580 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:59,674 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:59,674 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:59,674 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:59,674 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:59,674 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:59,674 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:59,689 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:59,689 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:59,689 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:59,689 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:59,767 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:59,767 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:59,767 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:59,767 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:59,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:59,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:59,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:59,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:59,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:59,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:19:59,923 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:00,048 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:00,048 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:00,048 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:00,048 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:00,080 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:00,080 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:00,080 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:00,080 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:00,080 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:00,080 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:00,236 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:00,236 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:00,236 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:00,236 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:00,251 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:00,251 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:00,251 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:00,251 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:00,251 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:00,251 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:00,376 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:00,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:00,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:00,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:00,502 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:00,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:00,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:00,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:00,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:00,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:00,518 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:00,642 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:00,642 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:00,642 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:00,642 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:00,658 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:00,658 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:00,658 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:00,658 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:00,658 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:00,658 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:00,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:00,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:00,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:00,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:00,799 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:00,799 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:00,799 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:00,799 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,083 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,114 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:10,225 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\220\000"
+}
+
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220j\000\000\000"
+}
+
+2017-03-01T11:20:10,256 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\001\002\003\221\000"
+}
+
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220Z\000\000\003\361! \000"
+}
+
+2017-03-01T11:20:10,271 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\221\240"
+}
+
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: UPDATE_APPLICATION_RESPONSE
+statusCode {
+  success: false
+  errorCode: UNKNOWN_ERROR
+}
+updateApplicationResponse {
+  aid: 2105841
+}
+
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,287 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,381 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,474 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:10,568 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,584 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,677 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:10,787 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,802 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,802 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:10,896 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:11,005 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:11,005 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:11,005 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:11,005 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:11,021 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:11,021 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:11,021 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:11,021 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:11,021 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:11,021 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:11,130 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:11,263 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:11,263 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:11,263 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: UPDATE_APPLICATION_REQUEST
+updateApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:11,263 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:11,278 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:11,278 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:11,278 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:11,278 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:17,447 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:20:17,478 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:17,478 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:20:17,478 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:20:17,478 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:17,478 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:268 #AppstoreClient.run() method is called
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:271 #Command:CARD_STATE
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:244 #createWebSocketClient() method is called
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:248 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:17,479 [Thread-7] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:274 #connecting to websocket...
+2017-03-01T11:20:17,620 [Thread-7] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:355 #Error occured during establishing websocket connectionjavax.websocket.DeploymentException: Handshake error.
+2017-03-01T11:20:19,806 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:20:19,821 [Thread-8] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:20:19,822 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:19,822 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:19,963 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:19,963 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:19,963 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:19,963 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:19,978 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:19,978 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:19,978 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:19,978 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\220\000"
+}
+
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220j\000\000\000"
+}
+
+2017-03-01T11:20:20,010 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\001\002\003\221\000"
+}
+
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: REMOVE_APPLICATION_RESPONSE
+statusCode {
+  success: false
+  errorCode: APPLICATION_DOES_NOT_EXIST
+}
+removeApplicationResponse {
+  aid: 2105841
+}
+
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,025 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,103 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,103 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,103 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,103 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,103 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,103 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,119 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,119 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,119 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,119 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,181 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,259 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,259 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,259 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,259 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,275 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,275 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,275 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,275 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,275 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,275 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,337 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,337 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,337 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,337 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,337 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,337 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,353 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,353 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,353 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,353 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,416 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,431 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,431 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,494 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,509 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,572 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,587 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:20:20,665 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:20:20,743 [Thread-8] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:28:24,649 [main] (sid=) INFO  c.a.i.s.u.AppstoreApplication:42 #Application is started....
+2017-03-01T11:28:24,993 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:28:24,993 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:47 #Application window is opened
+2017-03-01T11:28:24,993 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreProperties:34 #Properties:{appstore.demo.cardissuer1.ndef.msg=wss://localhost:8443/store-server/cardissuers/demo, appstore.demo.appprovider.server=wss://localhost:8443/trustidpersoserver/, app.version=0.1, appstore.certificate.trust.password=test123, appstore.application.aid.tobedeleted=15802656, app.name=appstore-monorail-test, appstore.certificate.file.path=C:/trustid/trustidpersoserver-test/conf/, nfc.reader.name=BROADCOM NFC Smartcard Reader 1, appstore.certificate.file.name=truststore.jks, appstore.approved.application.id=1}
+2017-03-01T11:28:24,993 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:28:24,993 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:28:24,993 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:28:24,993 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:28:24,993 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:28:24,993 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:28:30,001 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:124 #card not present, please tap the card ....
+2017-03-01T11:28:35,011 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:124 #card not present, please tap the card ....
+2017-03-01T11:28:40,021 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:124 #card not present, please tap the card ....
+2017-03-01T11:28:45,030 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:124 #card not present, please tap the card ....
+2017-03-01T11:28:50,040 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:124 #card not present, please tap the card ....
+2017-03-01T11:28:50,446 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:28:50,446 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:28:50,462 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:268 #AppstoreClient.run() method is called
+2017-03-01T11:28:50,462 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:271 #Command:CARD_STATE
+2017-03-01T11:28:50,462 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:244 #createWebSocketClient() method is called
+2017-03-01T11:28:50,493 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:248 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:28:50,509 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:274 #connecting to websocket...
+2017-03-01T11:28:51,135 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:355 #Error occured during establishing websocket connectionjavax.websocket.DeploymentException: Handshake error.
+2017-03-01T11:29:00,712 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:29:00,728 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:29:00,728 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:29:00,743 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:29:00,743 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:29:00,743 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:29:00,743 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:29:00,743 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:29:00,743 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:29:00,744 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:00,744 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:00,963 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:00,963 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,010 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,010 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,010 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,010 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,010 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,010 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\220\000"
+}
+
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\220j\000\000\000"
+}
+
+2017-03-01T11:29:01,056 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,088 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,088 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,088 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: DES_FIRE_RESPONSE
+desFireResponse {
+  response: "\001\002\003\221\000"
+}
+
+2017-03-01T11:29:01,088 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,088 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,088 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,088 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: REMOVE_APPLICATION_RESPONSE
+statusCode {
+  success: false
+  errorCode: APPLICATION_DOES_NOT_EXIST
+}
+removeApplicationResponse {
+  aid: 2105841
+}
+
+2017-03-01T11:29:01,103 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,119 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,119 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,228 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,228 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,244 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,322 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,431 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,525 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,587 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,603 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,665 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,665 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,665 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,665 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,665 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,665 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,681 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,681 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,681 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,681 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,759 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,822 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,822 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,822 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,822 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,838 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,838 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,838 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,838 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:29:01,838 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:29:01,838 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:29:01,900 [Thread-4] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:30:23,322 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:30:23,338 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:30:23,338 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:30:23,338 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:30:23,338 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:30:23,338 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:30:23,338 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:30:23,448 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:30:23,448 [Thread-5] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:30:23,448 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:30:23,463 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:30:23,604 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:30:23,604 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:30:23,620 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:30:23,620 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:30:30,640 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:30:30,640 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:30:30,766 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:30:30,766 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:30:30,766 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:30:30,766 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:30:37,786 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:30:37,786 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:30:37,881 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:30:37,881 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:30:37,881 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:30:37,881 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:30:44,901 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:30:44,901 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:30:45,027 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:30:45,027 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:30:45,027 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:30:45,027 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:30:52,048 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:30:52,048 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:30:52,142 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:30:52,142 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:30:52,142 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:30:52,142 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:30:59,163 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:30:59,163 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:30:59,342 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:30:59,342 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:30:59,342 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:30:59,342 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:31:06,363 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:31:06,363 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:31:06,475 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:31:06,475 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:31:06,475 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:31:06,475 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:31:13,495 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:31:13,495 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:31:13,621 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:31:13,621 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:31:13,621 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:31:13,621 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:31:20,642 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:31:20,642 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:31:20,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:31:20,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:31:20,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:31:20,783 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:31:27,804 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:31:27,804 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:31:27,945 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:31:27,945 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:31:27,945 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:31:27,945 [Thread-5] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:16,325 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:66 #doAppstoreCall()
+2017-03-01T11:32:16,341 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:103 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:32:16,341 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2017-03-01T11:32:16,341 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2017-03-01T11:32:16,341 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:105 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:32:16,341 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:107 #Terminal is matched which is configured in the property file
+2017-03-01T11:32:16,341 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:117 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2017-03-01T11:32:16,451 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 #Got card channel:PC/SC channel 0
+2017-03-01T11:32:16,451 [Thread-6] (sid=) INFO  c.a.i.s.u.AppstoreApplication:137 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2017-03-01T11:32:16,451 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:16,466 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:16,591 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:16,591 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:16,591 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:16,591 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:23,596 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:23,596 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:23,691 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:23,691 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:23,691 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:23,691 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:30,711 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:30,711 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:30,821 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:30,821 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:30,821 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:30,821 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:37,826 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:37,826 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:37,952 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:37,952 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:37,952 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:37,952 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:44,973 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:44,973 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:45,092 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:45,092 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:45,092 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:45,092 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:52,097 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:52,097 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:52,207 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:52,207 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:52,207 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:52,207 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:55,733 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:32:55,733 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:32:55,733 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:32:55,733 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:32:55,733 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:55,733 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:55,843 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:55,843 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:55,843 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:55,843 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:32:56,265 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:166 RECEIVED:
+2017-03-01T11:32:56,265 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:168 -----------------------
+2017-03-01T11:32:56,265 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:170 type: DES_FIRE_COMMAND
+statusCode {
+  success: true
+}
+desFireCommand {
+  command: "\000\244\004\000\a\322v\000\000\205\001\000\000"
+}
+
+2017-03-01T11:32:56,265 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:171 -----------------------
+2017-03-01T11:32:56,265 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:32:56,265 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:32:56,405 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:32:56,405 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:32:56,405 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:32:56,405 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:33:03,426 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:33:03,426 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:33:03,567 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:33:03,567 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:33:03,567 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:33:03,567 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------
+2017-03-01T11:33:10,572 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:219 #createWebSocketClient() method is called
+2017-03-01T11:33:10,572 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:223 #Got keystore path:C:/trustid/trustidpersoserver-test/conf/truststore.jks
+2017-03-01T11:33:10,682 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:148 SEND:
+2017-03-01T11:33:10,682 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:151 -----------------------
+2017-03-01T11:33:10,682 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:153 type: REMOVE_APPLICATION_REQUEST
+removeApplicationRequest {
+  uid: "\312\376\272\276"
+  aid: 15802656
+}
+
+2017-03-01T11:33:10,682 [Thread-6] (sid=) INFO  c.a.i.s.w.u.ThirdPartyAppproviderClient:155 -----------------------

@@ -1,0 +1,24 @@
+ Volume in drive C is AWS_System
+ Volume Serial Number is 2A21-70A7
+
+ Directory of C:\nxp\workspaces\new-appstore\rolloutappstore\appstore-backend\tools\AppStore-Sample-IssuanceSystem\extLib
+
+10/28/2016  12:14 PM    <DIR>          .
+10/28/2016  12:14 PM    <DIR>          ..
+10/28/2016  10:50 AM            18,125 appprovider-communication-dto-0.1-SNAPSHOT.jar
+10/28/2016  10:50 AM            99,032 appprovider-communication-protobuf-0.1-SNAPSHOT.jar
+10/28/2016  10:50 AM            24,511 appstore-communication-dto-0.1-SNAPSHOT.jar
+10/28/2016  10:50 AM         5,120,709 appstore-communication-protobuf-0.1-SNAPSHOT.jar
+10/28/2016  10:50 AM           135,903 log4j-api-2.3.jar
+10/28/2016  10:50 AM           827,024 log4j-core-2.3.jar
+10/28/2016  10:50 AM            22,544 log4j-slf4j-impl-2.3.jar
+10/28/2016  10:50 AM           596,642 protobuf-java-2.6.1.jar
+10/28/2016  10:50 AM            32,127 slf4j-api-1.7.12.jar
+10/28/2016  12:15 PM                 0 t.log
+10/28/2016  10:50 AM           243,830 tomcat-embed-websocket-7.0.64.jar
+10/28/2016  10:50 AM         2,036,832 tyrus-standalone-client-1.11.jar
+10/28/2016  10:50 AM            45,298 websocket-api-9.3.5.v20151012.jar
+10/28/2016  10:50 AM            36,017 websocket-client-9.3.5.v20151012.jar
+10/28/2016  10:50 AM           188,066 websocket-common-9.3.5.v20151012.jar
+              15 File(s)      9,426,660 bytes
+               2 Dir(s)  296,547,684,352 bytes free

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build-appstoreissuancesystem" name="AppStore-Sample-IssuanceSystem">
+
+	<property name="src" value="src" />
+	<property name="extLib" value="extLib" />
+	<property name="conf" value="conf" />
+
+	<path id="appstore.classpath">
+		<fileset dir="extLib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<pathconvert property="mf.classpath" pathsep=" ./lib/">
+		<path refid="appstore.classpath" />
+		<flattenmapper />
+	</pathconvert>
+
+
+	<target name="init" depends="delete">
+		<mkdir dir="dist"/>
+		<mkdir dir="dist/lib"/>
+		<mkdir dir="dist/conf"/>
+		<mkdir dir="dist/classes"/>
+	</target>
+
+	<target name="delete">
+		<delete dir="dist"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="dist/classes" classpathref="appstore.classpath" debug="true" debuglevel="lines,vars,source" includeantruntime="false">
+		</javac>
+		<copy todir="dist/classes">
+			<fileset dir="${src}" excludes="**/*.java"/>
+		</copy>
+	</target>
+
+	<target name="build-toListNFCReaders" depends="compile">
+		<jar basedir="dist/classes" destfile="dist/toListNFCReaders.jar">
+			<manifest>
+				<attribute name="Main-Class" value="com.appstore.issuance.system.utils.ListNFCReaders"/>
+			</manifest>
+		</jar>
+	</target>
+
+
+	<target name="build-appstoreissuancesystem" depends="compile">
+		<jar basedir="dist/classes" destfile="dist/appstoreissuancesystem.jar">
+			<manifest>
+				<attribute name="Main-Class" value="com.appstore.issuance.system.ui.AppstoreApplication"/>
+				<attribute name="Created-By" value="NXP Semiconductors"/>
+				<attribute name="Class-Path" value="${mf.classpath}" />
+			</manifest>
+		</jar>
+		<copy todir="dist/conf">
+			<fileset dir="conf" includes="*.properties">
+			</fileset>
+		</copy>
+		<copy todir="dist/lib">
+			<fileset dir="extLib" includesfile="dependencies.list">
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="run-toListNFCReaders" depends="build-toListNFCReaders">
+		<java jar="./dist/toListNFCReaders.jar" fork="true"/>
+	</target>
+
+	<target name="run-appstoreissuancesystem" depends="build-appstoreissuancesystem">
+		<java jar="./dist/appstoreissuancesystem.jar" fork="true"/>
+	</target>
+
+</project>

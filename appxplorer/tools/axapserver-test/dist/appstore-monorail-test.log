@@ -1,0 +1,33 @@
+2016-12-18T20:00:30,917 [main] (sid=) INFO  c.a.i.s.u.AppstoreApplication:42 #Application is started....
+2016-12-18T20:00:31,307 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:65 #doAppstoreCall()
+2016-12-18T20:00:31,307 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:47 #Application window is opened
+2016-12-18T20:00:31,322 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreProperties:34 #Properties:{appstore.demo.cardissuer1.ndef.msg=wss://localhost:8443/store-server/cardissuers/demo, appstore.demo.appprovider.server=wss://localhost:8443/monorail-server/, app.version=0.1, appstore.certificate.trust.password=test123, appstore.application.aid.tobedeleted=15856371, app.name=appstore-monorail-test, appstore.certificate.file.path=C:/nxp/workspaces/new-appstore/rolloutappstore/appstore-backend/tools/appstore-monorail-test/conf/, nfc.reader.name=BROADCOM NFC Smartcard Reader 1, appstore.certificate.file.name=truststore.jks, appstore.approved.application.id=152}
+2016-12-18T20:00:31,322 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:100 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2016-12-18T20:00:31,322 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:102 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2016-12-18T20:00:31,322 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:102 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2016-12-18T20:00:31,322 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:102 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2016-12-18T20:00:31,322 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:104 #Terminal is matched which is configured in the property file
+2016-12-18T20:00:31,322 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:114 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2016-12-18T20:00:31,432 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:131 #Got card channel:PC/SC channel 0
+2016-12-18T20:00:31,432 [Thread-3] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2016-12-18T20:00:31,463 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:268 #AppstoreClient.run() method is called
+2016-12-18T20:00:31,463 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:271 #Command:INSTALL
+2016-12-18T20:00:31,463 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:244 #createWebSocketClient() method is called
+2016-12-18T20:00:31,494 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:248 #Got keystore path:C:/nxp/workspaces/new-appstore/rolloutappstore/appstore-backend/tools/appstore-monorail-test/conf/truststore.jks
+2016-12-18T20:00:31,494 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:274 #connecting to websocket...
+2016-12-18T20:00:32,945 [Thread-3] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:356 #Error occured during establishing websocket connectionjavax.websocket.DeploymentException: Connection failed.
+2016-12-18T20:00:35,503 [AWT-EventQueue-0] (sid=) INFO  c.a.i.s.u.AppstoreApplication:65 #doAppstoreCall()
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:100 #Got NFC Reader Name from the Properties:BROADCOM NFC Smartcard Reader 1
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:102 #Got Terminal:PC/SC terminal Broadcom Corp Contacted SmartCard 0
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:102 #Got Terminal:PC/SC terminal Broadcom Corp Contactless SmartCard 0
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:102 #Got Terminal:PC/SC terminal BROADCOM NFC Smartcard Reader 1
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:104 #Terminal is matched which is configured in the property file
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:114 Chosen terminal:BROADCOM NFC Smartcard Reader 1
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:131 #Got card channel:PC/SC channel 0
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.u.AppstoreApplication:134 PC/SC card in BROADCOM NFC Smartcard Reader 1, protocol T=1, state OK
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:268 #AppstoreClient.run() method is called
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:271 #Command:CARD_STATE
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:244 #createWebSocketClient() method is called
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:248 #Got keystore path:C:/nxp/workspaces/new-appstore/rolloutappstore/appstore-backend/tools/appstore-monorail-test/conf/truststore.jks
+2016-12-18T20:00:35,519 [Thread-4] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:274 #connecting to websocket...
+2016-12-18T20:00:36,548 [Thread-4] (sid=) INFO  c.a.i.s.w.u.AppstoreClient:356 #Error occured during establishing websocket connectionjavax.websocket.DeploymentException: Connection failed.
