@@ -1,0 +1,67 @@
+package com.nxp.appxplorer.communication.protobuf;
+
+message RemoteMessage {
+  enum TypeEnum {
+    DES_FIRE_COMMAND = 0;
+    DES_FIRE_RESPONSE = 1;
+
+    UPDATE_APPLICATION_REQUEST = 2;
+    UPDATE_APPLICATION_RESPONSE = 3;
+
+    REMOVE_APPLICATION_REQUEST = 4;
+    REMOVE_APPLICATION_RESPONSE = 5;
+  }
+
+  // The field "type" is actually required. We set it "optional" only to be able to extend the TypeEnum later on. If the field "type"
+  // would be "required", extending the TypeEnum would break clients that work with the old version of the TypeEnum.
+  optional TypeEnum type = 1;
+  optional StatusCode statusCode = 2;
+
+  optional DesFireCommand desFireCommand = 3;
+  optional DesFireResponse desFireResponse = 4;
+
+  optional UpdateApplicationRequest updateApplicationRequest = 5;
+  optional UpdateApplicationResponse updateApplicationResponse = 6;
+
+  optional RemoveApplicationRequest removeApplicationRequest = 7;
+  optional RemoveApplicationResponse removeApplicationResponse = 8;
+}
+
+message StatusCode {
+  enum ErrorCodeEnum {
+    UNKNOWN_ERROR = 0;
+    AUTHENTICATION_FAILED = 1;
+    DES_FIRE_ERROR = 2;
+    APPLICATION_DOES_NOT_EXIST = 3;
+    UNSUPPORTED_CARD = 4;
+  }
+
+  required bool success = 1;
+  optional ErrorCodeEnum errorCode = 2;
+}
+
+message DesFireCommand {
+  required bytes command = 1;
+}
+
+message DesFireResponse {
+  required bytes response = 1;
+}
+
+message UpdateApplicationRequest {
+  required bytes uid = 1;
+  required int32 aid = 2;
+}
+
+message UpdateApplicationResponse {
+  required int32 aid = 2;
+}
+
+message RemoveApplicationRequest {
+  required bytes uid = 1;
+  required int32 aid = 2;
+}
+
+message RemoveApplicationResponse {
+  required int32 aid = 1;
+}

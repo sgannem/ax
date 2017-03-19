@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.nxp.appxplorer</groupId>
+		<artifactId>axapservercomm-parent</artifactId>
+		<version>0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>axapservercomm-protobuf</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>axapservercomm-protobuf</name>
+	<description>Domain model of the WebSocket server.</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.inject.extensions</groupId>
+			<artifactId>guice-assistedinject</artifactId>
+			<version>${guice.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taplinx-java</groupId>
+			<artifactId>librarymanager</artifactId>
+			<version>${librarymanager.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taplinx-java</groupId>
+			<artifactId>desfire</artifactId>
+			<version>${desfire.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.nxp.appxplorer</groupId>
+			<artifactId>axapservercomm-dto</artifactId>
+			<version>0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+		 <groupId>com.google.protobuf</groupId>
+		 <artifactId>protobuf-java</artifactId>
+		 <version>2.6.1</version>
+		</dependency>
+
+	</dependencies>
+	
+	
+	<build>
+     <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>protobuf-tool/*.*</exclude>
+          <exclude>protobuf/*.*</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <extensions>
+      <extension>
+        <groupId>kr.motd.maven</groupId>
+        <artifactId>os-maven-plugin</artifactId>
+        <version>1.2.3.Final</version>
+      </extension>
+    </extensions>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>${maven.plugin.exec.version}</version>
+        <executions>
+          <!-- Maven execute -> generate-sources :: ProtocolBuffers compile -->
+          <execution>
+            <id>running_protobuf_compiler</id>
+            <phase>generate-sources</phase>
+            <configuration>
+              <executable>
+                ${project.basedir}/src/main/resources/protobuf-tool/protoc-${protobuf.version}-${os.detected.classifier}.exe
+              </executable>
+              <arguments>
+                <argument>--java_out=${project.basedir}/src/main/java</argument>
+                <argument>--proto_path=${project.basedir}/src/main/resources/protobuf</argument>
+                <argument>${project.basedir}/src/main/resources/protobuf/CommunicationProtocol.proto</argument>
+              </arguments>
+            </configuration>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+	
+</project>

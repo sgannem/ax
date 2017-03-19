@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.nxp.appxplorer</groupId>
+	<artifactId>axapserver-parent</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>axapserver-parent</name>
+	<description>A demo implementation of an app provider's backend.</description>
+
+	<scm>
+		<connection>scm:git:ssh://www.collabnet.nxp.com:29418/rolloutappstore</connection>
+		<developerConnection>scm:git:ssh://www.collabnet.nxp.com:29418/rolloutappstore</developerConnection>
+		<tag>0.1-SNAPSHOT</tag>
+	</scm>
+
+
+	<modules>
+		<module>axapserver-model</module>
+		<module>axapservercomm-parent</module>
+		<module>axapserver</module>
+	</modules>
+	<!-- <module>trustid-personserver-communication-parent</module> <module>trustid-personserver-server</module> 
+		<module>trustid-personserver-doc</module> </modules> -->
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+
+		<maven.version>3.3.3</maven.version>
+		<maven.plugin.exec.version>1.4.0</maven.plugin.exec.version>
+		<maven.plugin.resources.version>2.7</maven.plugin.resources.version>
+		<maven.plugin.jar.version>2.6</maven.plugin.jar.version>
+		<maven.plugin.war.version>2.6</maven.plugin.war.version>
+		<maven.plugin.compiler.version>3.3</maven.plugin.compiler.version>
+		<maven.plugin.surefire.version>2.18.1</maven.plugin.surefire.version>
+		<maven.plugin.failsafe.version>2.18.1</maven.plugin.failsafe.version>
+		<maven.plugin.site.version>3.4</maven.plugin.site.version>
+		<maven.plugin.release.version>2.5.2</maven.plugin.release.version>
+		<maven.plugin.scmApi.version>1.9.4</maven.plugin.scmApi.version>
+		<maven.plugin.scmProviderGitExe.version>1.9.4</maven.plugin.scmProviderGitExe.version>
+
+		<log4j.version>2.3</log4j.version>
+		<slf4j.version>1.7.12</slf4j.version>
+		<log4j-slf4j.version>${log4j.version}</log4j-slf4j.version>
+
+		<protobuf.version>2.6.1</protobuf.version>
+		<guice.version>4.0</guice.version>
+		<javax.servlet.api.version>3.1.0</javax.servlet.api.version>
+		<tomcat.version>7.0.64</tomcat.version>
+		<tyrus.version>1.11</tyrus.version>
+		<testng.version>6.9.4</testng.version>
+
+		<apdumagic.version>4.04.1606</apdumagic.version>
+
+		<!-- Sonar properties -->
+		<sonar.version>2.7.1</sonar.version>
+		<sonar.language>java</sonar.language>
+
+		<!-- Sonar Server URL (needs to be adapted for NXP Sonar server) -->
+		<sonar.host.url>http://example.com</sonar.host.url>
+		<sonar.profile>NXP-java-global</sonar.profile>
+		<sonar.exclusions>
+			**/CommunicationProtocol.java,
+
+			<!-- Exclude false-positives on file level (e.g. DTOs with duplicate code 
+				blocks) -->
+			**/com/nxp/appstore/appprovider/communication/dto/message/RemoteMessageDto.java
+		</sonar.exclusions>
+
+		<!-- Coverage Reports -->
+		<sonar.jacoco.itReportPath>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.itReportPath>
+		<sonar.jacoco.reportPath>target/jacoco.exec</sonar.jacoco.reportPath>
+		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.jacoco.reportMissing.force.zero>true</sonar.jacoco.reportMissing.force.zero>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<jacoco.version>0.7.5.201505241946</jacoco.version>
+		<desfire.version>1.0</desfire.version>
+		<librarymanager.version>1.0</librarymanager.version>
+
+	</properties>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.plugin.compiler.version}</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+						<showDeprecation>true</showDeprecation>
+						<showWarnings>true</showWarnings>
+						<fork>true</fork>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>
