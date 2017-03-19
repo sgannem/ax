@@ -1,0 +1,47 @@
+<div class="content-wrapper-no-padding add-vertical-scrollbar style-3">
+    <div class="tabulator-container-gray-outline" *ngIf="selectedRequestDetail">
+        <div class="row">
+            <div class="cell border-right" style="width:30%">
+
+                <request-list [requestDetails]="requestDetails" [(selected)]="selectedRequestDetail"></request-list>
+            </div>
+            <div class="cell" style="width:70%">
+                <div [className]="tableClass" *ngIf="selectedRequestDetail">
+
+                    <div [className]="headerClass">
+                        <div class="cell header-padding">
+                            <span class="fa-stack fa-lg">
+                              <i class="fa fa-circle-o fa-stack-1x circle-font-size"></i>
+                              <i [className]="logoClass"></i>
+                            </span> {{requestStatus}} request made by {{selectedRequestDetail.appProviderName}}
+                            for {{selectedRequestDetail.app}} on {{selectedRequestDetail.updatedOn}}
+                        </div>
+                    </div>
+
+                    <div class="row" *ngIf="requestStatus=='Declined'">
+                        <div class="cell italic-padding">
+                            <span class="bold">Your reason for declination:      </span> {{selectedRequestDetail.reasonForDeclination}}
+                     </div>
+
+                    </div>
+                    <div class="row ">
+                        <div class="cell">
+                            <request-detail [requestDetail]="selectedRequestDetail"></request-detail>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell buttons-padding" *ngIf="requestStatus=='Pending'">
+                            <a href="javascript:void(0)" class="text-decoration dark-button right-padding  lift-button-up bold" (click)="accepted(selectedRequestDetail)"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Accepted</a>&nbsp;&nbsp;
+                            <a href="javascript:void(0)" class="text-decoration dark-button right-padding lift-button-up bold" (click)="declined(selectedRequestDetail)"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Declined</a>&nbsp;&nbsp;
+                            <a href="" class=" anchor-style right-padding lift-button-up bold">or create an individual offer</a>
+                        </div>
+                        <div class="cell bold buttons-padding color" *ngIf="requestStatus=='Accepted'">
+                            NOT YET PAID
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

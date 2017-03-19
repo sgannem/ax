@@ -1,0 +1,41 @@
+<div class="content-wrapper add-vertical-scrollbar style-3">
+    <div class="content-heading bold">Basic Information</div><br/>
+    <form [formGroup]="MyAppBasicInfoForm" novalidate>
+        <div class="form-group">
+            <label for="providerName" class="bold text-1">Provider name</label>
+            <input type="text" class="form-control input-element-width" formControlName="providerName" (keyup)="updateBasicInfoToMaster($event)" />
+            <div class="basic-information-subtitle-text bold">The card name is only visible to you.</div><br/>
+        </div>
+        <div class="form-group">
+            <label for="" class="bold text-1">Contact email address</label>
+            <input type="text" class="form-control input-element-width" formControlName="email" (keyup)="updateBasicInfoToMaster($event)" />
+            <div class="basic-information-subtitle-text bold">Use an email address for end users to contact you.</div><br/>
+        </div>
+        <div class="form-group">
+            <label for="" class="bold text-1">Phone number</label>
+            <input type="text" class="form-control input-element-width" formControlName="phoneNumber" (keyup)="updateBasicInfoToMaster($event)" />
+            <div class="basic-information-subtitle-text bold">Include country extension at the beginning, eg. +43 316 123456</div><br/>
+        </div>
+        <div class="form-group">
+            <label for="" class="bold text-1">Business segment</label><br/>
+            <select2 [data]="businessSegmentsList" [value]="businessSegmentValue" (valueChanged)="selectBusinessSegment($event)"></select2><br/><br/>
+        </div>
+        <div class="form-group">
+            <label for="" class="bold text-1">Company or promotion logo</label><br/>
+            <input id="cardLogo" type="file" class="file" value="Upload">
+            <div class="basic-information-subtitle-text bold">Type: PNG, Exact Size: 512X768px</div><br/>
+
+        </div>
+
+        <div class="form-group">
+            <label for="" class="bold text-1">Where can the application be downloaded?</label><br/>
+            <select2 [data]="countriesList" [options]="countryOptions" [width]="475" [value]="countryValue" (valueChanged)="selectCountry($event)">
+            </select2><br/><br/>
+        </div>
+        <div class="form-group">
+            <label for="" class="bold text-1">Where exactly can the application be used?</label><br/>
+            <textarea class="form-control input-element-width" rows="5" formControlName="applicationUsed" (keyup)="updateBasicInfoToMaster($event)"></textarea>
+            <div class="basic-information-subtitle-text bold">Example: In every Starbucks coffee shop; at every public trasport ticket machine; etc</div><br/>
+        </div>
+    </form>
+</div>

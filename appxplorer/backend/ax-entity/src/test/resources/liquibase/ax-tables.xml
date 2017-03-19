@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd 
+	http://www.liquibase.org/xml/ns/dbchangelog-ext 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd"
+	logicalFilePath="ax-tables.xml">
+
+	<property name="username" value="sg" dbms="mssql, hsqldb" />
+
+	<!-- Login Tables -->
+	<changeSet author="sg" id="create table logintype" dbms="mssql, hsqldb">
+		<createTable tableName="logintype">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+	<changeSet author="sg" id="add default logintype">
+		<insert tableName="logintype" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="axadmin" />
+			<column name="description" value="AppXplorer(AX) Admin" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="logintype" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="axcardissuer" />
+			<column name="description" value="AppXplorer(AX) card issuer" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="logintype" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="name" value="axapplicationprovider" />
+			<column name="description" value="AppXplorer(AX) application provider" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table accounttype" dbms="mssql, hsqldb">
+		<createTable tableName="accounttype">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg" id="add default accounttype">
+		<insert tableName="accounttype" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="email" />
+			<column name="description" value="It describes type of the login account" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table userrole" dbms="mssql, hsqldb">
+		<createTable tableName="userrole">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg" id="add default user role">
+		<insert tableName="userrole" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="axadmin" />
+			<column name="description" value="its appxplorer admin role" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userrole" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="cardissuer" />
+			<column name="description" value="its appxplorer cardissuer role" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userrole" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="name" value="applicationprovider" />
+			<column name="description" value="its appxplorer applicationprovider role" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table userprivileges" dbms="mssql, hsqldb">
+		<createTable tableName="userprivileges">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg" id="add default userprivileges">
+		<insert tableName="userprivileges" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="dashboard" />
+			<column name="description" value="dashboard" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userprivileges" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="logout" />
+			<column name="description" value="logout" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table userroleprivileges"
+		dbms="mssql, hsqldb">
+		<createTable tableName="userroleprivileges">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="roleid" type="smallint" />
+			<column name="privilegeid" type="smallint" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="roleid"
+			baseTableName="userroleprivileges" constraintName="fk_userroleprivileges_roleid"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="userrole" />
+		<addForeignKeyConstraint baseColumnNames="privilegeid"
+			baseTableName="userroleprivileges" constraintName="fk_userroleprivileges_privilegeid"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="userprivileges" />
+	</changeSet>
+
+	<changeSet author="sg" id="add default userroleprivileges">
+		<insert tableName="userroleprivileges" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="roleid" value="1" />
+			<column name="privilegeid" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userroleprivileges" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="roleid" value="1" />
+			<column name="privilegeid" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userroleprivileges" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="roleid" value="2" />
+			<column name="privilegeid" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userroleprivileges" dbms="mssql">
+			<column name="id" value="4" />
+			<column name="roleid" value="2" />
+			<column name="privilegeid" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userroleprivileges" dbms="mssql, hsqldb">
+			<column name="id" value="5" />
+			<column name="roleid" value="3" />
+			<column name="privilegeid" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="userroleprivileges" dbms="mssql, hsqldb">
+			<column name="id" value="6" />
+			<column name="roleid" value="3" />
+			<column name="privilegeid" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table passwordtype" dbms="mssql, hsqldb">
+		<createTable tableName="passwordtype">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="algorithmName" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="iterations" type="smallint" />
+			<column name="lengthOfSalt" type="smallint" />
+			<column name="desiredLength" type="smallint" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+	
+	<changeSet author="sg" id="create table accountstatus" dbms="mssql, hsqldb">
+		<createTable tableName="accountstatus">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg" id="add default accountstatus">
+		<insert tableName="accountstatus" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="active" />
+			<column name="description" value="account is in active state" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="accountstatus" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="blocked" />
+			<column name="description" value="account is in blocked state" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="accountstatus" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="name" value="inactive" />
+			<column name="description" value="account is in inactive state" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="add default passwordtype">
+		<insert tableName="passwordtype" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="algorithmName" value="PBKDF2WithHmacSHA512" />
+			<column name="iterations" value="8192" />
+			<column name="description"
+				value="PBKDF2 (Password-Based Key Derivation Function 2) is part of RSA Laboratories Public-Key Cryptography Standards (PKCS) series, specifically PKCS #5 v2.0, also published as Internet Engineering Task Forces RFC 2898. It replaces an earlier key derivation function, PBKDF1, which could only produce derived keys up to 160 bits long" />
+			<column name="lengthOfSalt" value="16" />
+			<column name="desiredLength" value="512" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table logindetails" dbms="mssql, hsqldb">
+		<createTable tableName="logindetails">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="accounttypeid" type="smallint" />
+			<column name="logintypeid" type="smallint" />
+			<column name="roleid" type="smallint" />
+			<column name="accountstatusid" type="smallint" />
+			<column name="passwordtypeid" type="smallint" />
+			<column name="passwordhash" type="TINYBLOB"
+				defaultValueComputed="CAST(0x00000000000000000000000000000000 
+		as varbinary)" />
+			<column name="salt" type="TINYBLOB"
+				defaultValueComputed="CAST(0x00000000000000000000000000000000 
+		as varbinary)" />
+			<column name="username" type="VARCHAR(256)" />
+			<column name="userid" type="VARCHAR(256)" />
+			<column name="externaluserid" type="VARCHAR(256)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="accountstatusid"
+			baseTableName="logindetails" constraintName="fk_logindetails_accountstatus_accountstatusid"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="accountstatus" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table logintokendetails"
+		dbms="mssql, hsqldb">
+		<createTable tableName="logintokendetails">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="logindetailsid" type="BIGINT" />
+			<column name="bearertoken" type="VARCHAR(256)" />
+			<column name="bearertokenCreatedOn" type="BIGINT" />
+			<column name="loginOn" type="BIGINT" />
+			<column name="logoutOn" type="BIGINT" />
+			<column name="expiryInSeconds" type="BIGINT" />
+			<column name="reserve1" type="VARCHAR(256)" />
+			<column name="reserve2" type="VARCHAR(256)" />
+			<column name="reserve3" type="VARCHAR(256)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="logindetailsid"
+			baseTableName="logintokendetails" constraintName="fk_logintokendetails_logindetailsid_roleid"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="logindetails" />
+	</changeSet>
+
+
+
+	<!-- end of Login Tables -->
+
+	<!-- hibernate sequence tables -->
+
+	<changeSet author="sg" id="create index hibernate_sequences"
+		dbms="mssql, hsqldb">
+		<createTable tableName="hibernate_sequences">
+			<column name="sequence_name" type="VARCHAR(255)" />
+			<column name="next_val" type="BIGINT" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg"
+		id="create indexes for hibernate_sequences and databasechangelog"
+		dbms="mssql, hsqldb">
+		<!-- Adding clustered index on table 'hibernate_sequence' to avoid failures 
+			during database replication/migration. -->
+		<sql>
+			CREATE CLUSTERED INDEX IX_HibernateSequence_SequenceName ON
+			dbo.hibernate_sequences (sequence_name)
+		</sql>
+		<!-- Adding clustered index on table 'DATABASECHANGELOG' to avoid failures 
+			during database replication/migration. -->
+		<sql>
+			CREATE CLUSTERED INDEX IX_DATABASECHANGELOG_ID ON
+			dbo.DATABASECHANGELOG (ID)
+		</sql>
+	</changeSet>
+
+	<!-- end of hibernate sequence tables -->
+
+	<!-- card issuer tables -->
+
+	<changeSet author="tg" id="create table businesssegment"
+		dbms="mssql, hsqldb">
+		<createTable tableName="businesssegment">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="priority" type="smallint" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="tg" id="add default businesssegment">
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="Airlines" />
+			<column name="description" value="Airlines" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="Amusement and entertainment" />
+			<column name="description" value="Amusement and entertainment" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="name" value="Associations" />
+			<column name="description" value="Associations" />
+			<column name="priority" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="4" />
+			<column name="name" value="Rentals" />
+			<column name="description" value="Rentals" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="5" />
+			<column name="name" value="Automobile and vehicles" />
+			<column name="description" value="Automobile and vehicles" />
+			<column name="priority" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="6" />
+			<column name="name" value="Fashion" />
+			<column name="description" value="Fashion" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="7" />
+			<column name="name" value="Education / Universities / Schools" />
+			<column name="description" value="Education / Universities / Schools" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="8" />
+			<column name="name" value="Electronics" />
+			<column name="description" value="Electronics" />
+			<column name="priority" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="9" />
+			<column name="name" value="Gas stations" />
+			<column name="description" value="Gas stations" />
+			<column name="priority" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="10" />
+			<column name="name" value="Hotels" />
+			<column name="description" value="Hotels" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="11" />
+			<column name="name" value="Transport / Transit" />
+			<column name="description" value="Transport / Transit" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="12" />
+			<column name="name" value="Restaurants and Café" />
+			<column name="description" value="Restaurants and Café" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="13" />
+			<column name="name" value="Micropayment or insurance" />
+			<column name="description" value="Micropayment or insurance" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="14" />
+			<column name="name" value="Retail" />
+			<column name="description" value="Retail" />
+			<column name="priority" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="15" />
+			<column name="name" value="Utilities" />
+			<column name="description" value="Utilities" />
+			<column name="priority" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="16" />
+			<column name="name" value="Wholesale trade" />
+			<column name="description" value="Wholesale trade" />
+			<column name="priority" value="2" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="businesssegment" dbms="mssql, hsqldb">
+			<column name="id" value="17" />
+			<column name="name" value="Events" />
+			<column name="description" value="Events" />
+			<column name="priority" value="1" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="tg" id="create table smartmediumtype"
+		dbms="mssql, hsqldb">
+		<createTable tableName="smartmediumtype">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="tg" id="add default smartmediumtype">
+		<insert tableName="smartmediumtype" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="WEARABLE" />
+			<column name="description" value="WEARABLE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="smartmediumtype" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="CARD" />
+			<column name="description" value="CARD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="tg" id="create table technologyused" dbms="mssql, hsqldb">
+		<createTable tableName="technologyused">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="tg" id="add default technologyused">
+		<insert tableName="technologyused" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="EV2" />
+			<column name="description" value="EV2 Card" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="technologyused" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="EV1" />
+			<column name="description" value="EV1 Card" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="tg" id="create table smartmediumsize"
+		dbms="mssql, hsqldb">
+		<createTable tableName="smartmediumsize">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="tg" id="add default smartmediumsize">
+		<insert tableName="smartmediumsize" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="128" />
+			<column name="description" value="128 bytes" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="smartmediumsize" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="256" />
+			<column name="description" value="256 bytes" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="smartmediumsize" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="name" value="512" />
+			<column name="description" value="512 bytes" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="smartmediumsize" dbms="mssql, hsqldb">
+			<column name="id" value="4" />
+			<column name="name" value="1024" />
+			<column name="description" value="1024 bytes" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="smartmediumsize" dbms="mssql, hsqldb">
+			<column name="id" value="5" />
+			<column name="name" value="2048" />
+			<column name="description" value="2048 bytes" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="smartmediumsize" dbms="mssql, hsqldb">
+			<column name="id" value="6" />
+			<column name="name" value="4096" />
+			<column name="description" value="4096 bytes" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="smartmediumsize" dbms="mssql, hsqldb">
+			<column name="id" value="7" />
+			<column name="name" value="8192" />
+			<column name="description" value="8192 bytes" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table pricingtiertype"
+		dbms="mssql, hsqldb">
+		<createTable tableName="pricingtiertype">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg" id="create table formattype" dbms="mssql, hsqldb">
+		<createTable tableName="formattype">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg" id="create table registrationstatus"
+		dbms="mssql, hsqldb">
+		<createTable tableName="registrationstatus">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="tg" id="add default registrationstatus">
+		<insert tableName="registrationstatus" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="PENDING FOR APPROVAL" />
+			<column name="description" value="PENDING FOR APPROVAL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="registrationstatus" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="name" value="APPROVED" />
+			<column name="description" value="APPROVED" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="registrationstatus" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="name" value="REJECTED" />
+			<column name="description" value="REJECTED" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+
+	<changeSet author="sg" id="create table cardissuer" dbms="mssql, hsqldb">
+		<createTable tableName="cardissuer">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="firstName" type="VARCHAR(256)" />
+			<column name="lastName" type="VARCHAR(256)" />
+			<column name="email" type="VARCHAR(256)" />
+			<column name="companyName" type="VARCHAR(256)" />
+			<column name="registrationStatusId" type="smallint" />
+			<column name="registrationConfirmOn" type="BIGINT" />
+			<column name="businessSegmentId" type="smallint" />
+			<column name="companyOrBusinessLogo" type="longblob" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="registrationStatusId"
+			baseTableName="cardissuer" constraintName="fk_cardissuer_registrationstatus_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="registrationstatus" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table card" dbms="mssql, hsqldb">
+		<createTable tableName="card">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="cardIssuerId" type="BIGINT" />
+			<column name="cardName" type="VARCHAR(256)" />
+			<column name="contactEmail" type="VARCHAR(256)" />
+			<column name="phoneNumber" type="VARCHAR(50)" />
+			<column name="businessSegmentId" type="smallint" />
+			<column name="companyPromotionalLogo" type="LONGBLOB" />
+			<column name="smartMediumTypeId" type="smallint" />
+			<column name="technologyUsedId" type="smallint" />
+			<column name="smartMediumSizeId" type="smallint" />
+			<column name="ndefToken" type="VARCHAR(128)" />
+			<column name="isDraft" type="VARCHAR(1)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="cardIssuerId"
+			baseTableName="card" constraintName="fk_card_cardissuer_id" onDelete="CASCADE"
+			onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="cardissuer" />
+		<addForeignKeyConstraint baseColumnNames="businessSegmentId"
+			baseTableName="card" constraintName="fk_card_businesssegment_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="businesssegment" />
+		<addForeignKeyConstraint baseColumnNames="smartMediumTypeId"
+			baseTableName="card" constraintName="fk_card_smartmediumtype_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="smartmediumtype" />
+		<addForeignKeyConstraint baseColumnNames="technologyUsedId"
+			baseTableName="card" constraintName="fk_card_technologyused_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="technologyused" />
+		<addForeignKeyConstraint baseColumnNames="smartMediumSizeId"
+			baseTableName="card" constraintName="fk_card_smartmediumsize_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="smartmediumsize" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table applicationprovider"
+		dbms="mssql, hsqldb">
+		<createTable tableName="applicationprovider">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="firstName" type="VARCHAR(256)" />
+			<column name="lastName" type="VARCHAR(256)" />
+			<column name="email" type="VARCHAR(256)" />
+			<column name="companyName" type="VARCHAR(256)" />
+			<column name="registrationStatusId" type="smallint" />
+			<column name="registrationConfirmOn" type="BIGINT" />
+			<column name="businessSegmentId" type="smallint" />
+			<column name="companyOrBusinessLogo" type="longblob" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="registrationStatusId"
+			baseTableName="applicationprovider" constraintName="fk_applicationprovider_registrationstatus_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="registrationstatus" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table application" dbms="mssql, hsqldb">
+		<createTable tableName="application">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="applicationProviderId" type="BIGINT" />
+			<column name="providerName" type="VARCHAR(256)" />
+			<column name="contactEmail" type="VARCHAR(256)" />
+			<column name="phoneNumber" type="VARCHAR(50)" />
+			<column name="businessSegmentId" type="smallint" />
+			<column name="companyPromotionalLogo" type="LONGBLOB" />
+			<column name="applicationName" type="VARCHAR(256)" />
+			<column name="shortDescription" type="VARCHAR(1024)" />
+			<column name="detailedDescription" type="VARCHAR(MAX)" />
+			<column name="applicationId" type="BIGINT" />
+			<column name="numberOfKeys" type="smallint" />
+			<column name="keepDefaultKeys" type="VARCHAR(3)" />
+			<column name="changeMasterKey" type="VARCHAR(3)" />
+			<column name="applicationSizeInBytes" type="smallint" />
+			<column name="dfName" type="VARCHAR(50)" />
+			<column name="isoFileId" type="VARCHAR(50)" />
+			<column name="persoViaNxpAppxplorer" type="VARCHAR(3)" />
+			<column name="encryptedPersonalizationBasedOnUID" type="VARCHAR(3)" />
+			<column name="persoUsingOwnMobileApplication" type="VARCHAR(3)" />
+			<column name="endpointForSessionEstablishment" type="VARCHAR(3)" />
+			<column name="personalizationUrl" type="VARCHAR(256)" />
+			<column name="deletionUrl" type="VARCHAR(256)" />
+			<column name="isDraft" type="VARCHAR(1)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="applicationProviderId"
+			baseTableName="application" constraintName="fk_application_applicationprovider_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="applicationprovider" />
+		<addForeignKeyConstraint baseColumnNames="businessSegmentId"
+			baseTableName="application" constraintName="fk_application_businesssegment_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="businesssegment" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table cardpartitiondetails"
+		dbms="mssql, hsqldb">
+		<createTable tableName="cardpartitiondetails">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="cardId" type="BIGINT" />
+			<column name="formatTypeId" type="smallint" />
+			<column name="damSlotNumber" type="VARCHAR(50)" />
+			<column name="quotaLimit" type="VARCHAR(50)" />
+			<column name="slotSizeInBytes" type="smallint" />
+			<column name="slotNumber" type="VARCHAR(50)" />
+			<column name="applicationId" type="BIGINT" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="cardId"
+			baseTableName="cardpartitiondetails" constraintName="fk_cardpartitiondetails_card_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="card" />
+		<addForeignKeyConstraint baseColumnNames="formatTypeId"
+			baseTableName="cardpartitiondetails" constraintName="fk_cardpartitiondetails_formattype_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="formattype" />
+		<addForeignKeyConstraint baseColumnNames="applicationId"
+			baseTableName="cardpartitiondetails" constraintName="fk_cardpartitiondetails_application_id"
+			onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id"
+			referencedTableName="application" />
+	</changeSet>
+
+
+	<changeSet author="sg" id="create table cardpricingtier"
+		dbms="mssql, hsqldb">
+		<createTable tableName="cardpricingtier">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="pricingTierTypeId" type="BIGINT" />
+			<column name="cardId" type="BIGINT" />
+			<column name="numberOfInstalls" type="BIGINT" />
+			<column name="pricePerInstall" type="NUMBER(5,5)" />
+			<column name="isoCurrencyCode" type="VARCHAR(3)" />
+			<column name="cardPartitionDetailsId" type="BIGINT" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="pricingTierTypeId"
+			baseTableName="cardpricingtier" constraintName="fk_cardpricingtier_pricingtiertype_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="pricingtiertype" />
+		<addForeignKeyConstraint baseColumnNames="cardId"
+			baseTableName="cardpricingtier" constraintName="fk_cardpricingtier_card_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="card" />
+		<addForeignKeyConstraint baseColumnNames="cardPartitionDetailsId"
+			baseTableName="cardpricingtier" constraintName="fk_cardpricingtier_cardpartitiondetails_id"
+			onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id"
+			referencedTableName="cardpartitiondetails" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table applicationtnc" dbms="mssql, hsqldb">
+		<createTable tableName="applicationtnc">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="applicationId" type="BIGINT" />
+			<column name="tnc" type="longblob" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="applicationId"
+			baseTableName="applicationtnc" constraintName="fk_applicationtnc_application_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="application" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table cardtnc" dbms="mssql, hsqldb">
+		<createTable tableName="cardtnc">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="cardId" type="BIGINT" />
+			<column name="tnc" type="longblob" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="cardId"
+			baseTableName="cardtnc" constraintName="fk_cardtnc_card_id" onDelete="CASCADE"
+			onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="card" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table cardissuertnc" dbms="mssql, hsqldb">
+		<createTable tableName="cardissuertnc">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="cardIssuerId" type="BIGINT" />
+			<column name="tnc" type="longblob" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="cardIssuerId"
+			baseTableName="cardissuertnc" constraintName="fk_cardissuertnc_cardissuer_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="cardissuer" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table applicationprovidertnc"
+		dbms="mssql, hsqldb">
+		<createTable tableName="applicationprovidertnc">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="applicationProviderId" type="BIGINT" />
+			<column name="tnc" type="longblob" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="applicationProviderId"
+			baseTableName="applicationprovidertnc" constraintName="fk_applicationprovidertnc_applicationprovider_id"
+			onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+			referencedTableName="applicationprovider" />
+	</changeSet>
+
+	<changeSet author="sg" id="create table systemproperty" dbms="mssql, hsqldb">
+		<createTable tableName="systemproperty">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="propertyName" type="VARCHAR(256)" />
+			<column name="propertyValue" type="VARCHAR(256)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="sg" id="create table sendemailqueueentry"
+		dbms="mssql, hsqldb">
+		<createTable tableName="sendemailqueueentry">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="emailAddress" type="VARCHAR(256)" />
+			<column name="textFileAttachmentFileName" type="VARCHAR(256)" />
+			<column name="textFileAttachmentDescription" type="VARCHAR(1024)" />
+			<column name="insertedOn" type="BIGINT" />
+			<column name="subject" type="VARCHAR(1024)" />
+			<column name="message" type="VARCHAR(MAX)" />
+			<column name="textFileAttachmentContent" type="VARCHAR(MAX)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<!-- Country & Address tables -->
+	
+	<changeSet author="tg" id="create table country" dbms="mssql, hsqldb">
+		<createTable tableName="country">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="countryName" type="VARCHAR(256)" />
+			<column name="alpha2ISOCountry" type="VARCHAR(2)" />
+			<column name="alpha3ISOCountry" type="VARCHAR(3)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="tg" id="create table addresstype" dbms="mssql, hsqldb">
+		<createTable tableName="addresstype">
+			<column name="id" type="smallint">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="name" type="VARCHAR(256)" />
+			<column name="description" type="VARCHAR(1024)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="tg" id="add default addresstype">
+		<insert tableName="addresstype" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="name" value="COMPANY" />
+			<column name="description" value="COMPANY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+	
+	<changeSet author="tg" id="create table ciaddress" dbms="mssql, hsqldb">
+		<createTable tableName="ciaddress">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="addressTypeId" type="smallint" />
+			<column name="cardIssuerId" type="BIGINT" />
+			<column name="addressLine1" type="VARCHAR(1024)" />
+			<column name="addressLine2" type="VARCHAR(256)" />
+			<column name="addressLine3" type="VARCHAR(256)" />
+			<column name="addressEmail" type="VARCHAR(256)" />
+			<column name="addressPhoneNumber" type="VARCHAR(50)" />
+			<column name="city" type="VARCHAR(256)" />
+			<column name="country" type="VARCHAR(256)" />
+			<column name="zipCode" type="VARCHAR(256)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="cardIssuerId"
+				baseTableName="ciaddress" constraintName="fk_ciaddress_cardissuer_id" onDelete="CASCADE"
+				onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="cardissuer" />
+		<addForeignKeyConstraint baseColumnNames="addressTypeId"
+				baseTableName="ciaddress" constraintName="fk_ciaddress_addressType_id"
+				onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+				referencedTableName="addresstype" />
+	</changeSet>
+
+	<changeSet author="tg" id="create table apaddress" dbms="mssql, hsqldb">
+		<createTable tableName="apaddress">
+			<column name="id" type="BIGINT">
+				<constraints primaryKey="true" nullable="false" />
+			</column>
+			<column name="addressTypeId" type="smallint" />
+			<column name="applicationProviderId" type="BIGINT" />
+			<column name="addressLine1" type="VARCHAR(1024)" />
+			<column name="addressLine2" type="VARCHAR(256)" />
+			<column name="addressLine3" type="VARCHAR(256)" />
+			<column name="addressEmail" type="VARCHAR(256)" />
+			<column name="addressPhoneNumber" type="VARCHAR(50)" />
+			<column name="city" type="VARCHAR(256)" />
+			<column name="country" type="VARCHAR(256)" />
+			<column name="zipCode" type="VARCHAR(256)" />
+			<column name="isActive" type="VARCHAR(1)" />
+			<column name="createdBy" type="VARCHAR(100)" />
+			<column name="creationDate" type="DATE" />
+			<column name="creationTime" type="TIME" />
+			<column name="changedDate" type="DATE" />
+			<column name="changedTime" type="TIME" />
+			<column name="changedBy" type="VARCHAR(100)" />
+		</createTable>
+		<addForeignKeyConstraint baseColumnNames="applicationProviderId"
+				baseTableName="apaddress" constraintName="fk_apaddress_applicationprovider_id" onDelete="CASCADE"
+				onUpdate="CASCADE" referencedColumnNames="id" referencedTableName="applicationprovider" />
+		<addForeignKeyConstraint baseColumnNames="addressTypeId"
+				baseTableName="apaddress" constraintName="fk_apaddress_addressType_id"
+				onDelete="CASCADE" onUpdate="CASCADE" referencedColumnNames="id"
+				referencedTableName="addresstype" />
+	</changeSet>
+	
+</databaseChangeLog>

@@ -1,0 +1,57 @@
+div.full-width {
+    width: 100%;
+}
+
+div.full-height {
+    height: 88%;
+}
+
+div.width-one-third {
+    width: 33%;
+}
+
+div.add-new-card-top-nav-table {
+    display: table;
+    position: absolute;
+    z-index: 1000;
+}
+
+div.add-new-card-top-nav-table > div.add-new-card-nav-row {
+    display: table-row;
+}
+
+div.add-new-card-top-nav-table > div.add-new-card-nav-row > div.add-new-card-nav-cell {
+    display: table-cell;
+}
+
+div.add-left-right-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text-1 {
+    
+    font-size: 12px;
+    color: rgba(102, 102, 102, 1);
+    text-decoration: none;
+}
+
+.text-1-active {
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+.text-2 {
+    
+    font-size: 14px;
+    color: rgba(102, 102, 102, 1);
+    text-decoration: none;
+}
+
+.simulate-link {
+    
+    cursor: pointer;
+}
+
+.hide-link {
+    display: none;
+}

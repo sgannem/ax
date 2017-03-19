@@ -1,0 +1,576 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.nxp.appxplorer</groupId>
+	<artifactId>ax-parent</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>ax-parent</name>
+	<description> NXP AppXplorer(AX)</description>
+
+	<organization>
+		<name>NXP Semiconductors Netherlands N.V.</name>
+		<url>http://www.nxp.com/</url>
+	</organization>
+	<inceptionYear>2016</inceptionYear>
+
+	<developers>
+	</developers>
+
+	<modules>
+		<module>ax-commons</module>
+		<module>ax-entity</module>
+		<module>ax-marketservices</module>
+	</modules>
+
+
+	<properties>
+		<!-- Common definitions versions -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<shiro.version>1.2.3</shiro.version>
+		<guava.version>19.0</guava.version>
+		<commons.logging.version>1.1.3</commons.logging.version>
+		<commons.lang.version>3.4</commons.lang.version>
+		<javax.el-api.version>2.2.4</javax.el-api.version>
+
+		<!-- Maven and Maven Plugin versions -->
+		<maven.version>3.3.3</maven.version>
+		<maven.plugin.exec.version>1.4.0</maven.plugin.exec.version>
+		<maven.plugin.resources.version>2.7</maven.plugin.resources.version>
+		<maven.plugin.site.version>3.4</maven.plugin.site.version>
+		<maven.plugin.jar.version>2.6</maven.plugin.jar.version>
+		<maven.plugin.assembly.version>2.5.5</maven.plugin.assembly.version>
+		<maven.plugin.release.version>2.5.2</maven.plugin.release.version>
+		<maven.plugin.scmApi.version>1.9.4</maven.plugin.scmApi.version>
+		<maven.plugin.scmProviderGitExe.version>1.9.4</maven.plugin.scmProviderGitExe.version>
+		<maven.plugin.war.version>2.6</maven.plugin.war.version>
+		<maven.plugin.compiler.version>3.3</maven.plugin.compiler.version>
+		<maven.plugin.surefire.version>2.18.1</maven.plugin.surefire.version>
+		<maven.plugin.failsafe.version>2.18.1</maven.plugin.failsafe.version>
+		<maven.plugin.javadoc.version>2.10.3</maven.plugin.javadoc.version>
+		<maven.plugin.deploy.version>2.8.2</maven.plugin.deploy.version>
+		<maven.plugin.source.version>2.4</maven.plugin.source.version>
+		<maven.plugin.dependency.version>2.10</maven.plugin.dependency.version>
+		<maven.plugin.enforcer.version>1.4.1</maven.plugin.enforcer.version>
+		<maven.plugin.shade.version>2.4.1</maven.plugin.shade.version>
+		<maven.plugin.buildnumber.version>1.3</maven.plugin.buildnumber.version>
+
+		<build.timestamp>${maven.build.timestamp}</build.timestamp>
+		<maven.build.timestamp.format>yyyy-MM-dd HH:mm z</maven.build.timestamp.format>
+
+		<log4j.version>2.3</log4j.version>
+		<slf4j.version>1.7.12</slf4j.version>
+		<log4j-slf4j.version>${log4j.version}</log4j-slf4j.version>
+
+		<testng.version>6.9.4</testng.version>
+		<protobuf.version>2.6.1</protobuf.version>
+		<guice.version>4.0</guice.version>
+		<hibernate.version>5.0.1.Final</hibernate.version>
+		<liquibase.version>3.4.1</liquibase.version>
+		<tomcat.version>7.0.64</tomcat.version>
+		<bcprov.version>1.52</bcprov.version>
+		<postgres.version>9.4-1202-jdbc41</postgres.version>
+		<mssql.version>4.2</mssql.version>
+		<sun.jersey.version>1.19</sun.jersey.version>
+		<jackson.version>2.6.2</jackson.version>
+		<javax.ws.rs.api.version>2.0.1</javax.ws.rs.api.version>
+		<h2.version>1.4.189</h2.version>
+		<javax.servlet.api.version>3.1.0</javax.servlet.api.version>
+		<jsr305.version>3.0.0</jsr305.version>
+		<jmeter.plugin.version>1.10.1</jmeter.plugin.version>
+		<jmeter.version>2.11</jmeter.version>
+		<tyrus.version>1.11</tyrus.version>
+		<quartz.version>2.2.2</quartz.version>
+		<mockito-all.version>1.10.19</mockito-all.version>
+		<powermock-api-mockito.version>1.6.4</powermock-api-mockito.version>
+
+
+		<!-- Sonar properties -->
+		<sonar.version>2.7.1</sonar.version>
+		<sonar.language>java</sonar.language>
+
+		<desfire.version>1.0</desfire.version>
+		<librarymanager.version>1.0</librarymanager.version>
+
+		<!-- Sonar Server URL (needs to be adapted for NXP Sonar server) -->
+		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.profile>NXP-java-global</sonar.profile>
+		<sonar.exclusions>
+			**/CommunicationProtocol.java,
+			**/com/nxp/appstore/entity/**,
+
+			<!-- Exclude false-positives on file level (e.g. DTOs with duplicate code 
+				blocks) -->
+			**/com/nxp/appstore/communication/dto/message/RemoteMessageDto.java,
+			**/com/nxp/appstore/market/commons/rest/dto/CardIssuerDto.java,
+			**/com/nxp/appstore/market/commons/rest/dto/ApplicationProviderDto.java
+		</sonar.exclusions>
+
+		<!-- Coverage Reports -->
+		<sonar.jacoco.itReportPath>${project.basedir}/../../target/jacoco-it.exec</sonar.jacoco.itReportPath>
+		<sonar.jacoco.reportPath>target/jacoco.exec</sonar.jacoco.reportPath>
+		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.jacoco.reportMissing.force.zero>true</sonar.jacoco.reportMissing.force.zero>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<jacoco.version>0.7.5.201505241946</jacoco.version>
+
+	</properties>
+
+	<scm>
+		<connection>scm:git:ssh://www.collabnet.nxp.com:29418/rolloutappstore</connection>
+		<developerConnection>scm:git:ssh://www.collabnet.nxp.com:29418/rolloutappstore</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-slf4j-impl</artifactId>
+				<version>${log4j-slf4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.inject</groupId>
+				<artifactId>guice</artifactId>
+				<version>${guice.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.inject.extensions</groupId>
+				<artifactId>guice-persist</artifactId>
+				<version>${guice.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-core</artifactId>
+				<version>${liquibase.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-web</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-guice</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.module</groupId>
+				<artifactId>jackson-module-guice</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-core</artifactId>
+				<version>${sun.jersey.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.inject.extensions</groupId>
+				<artifactId>guice-servlet</artifactId>
+				<version>${guice.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.jaxrs</groupId>
+				<artifactId>jackson-jaxrs-json-provider</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-server</artifactId>
+				<version>${sun.jersey.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.sun.jersey.contribs</groupId>
+				<artifactId>jersey-guice</artifactId>
+				<version>${sun.jersey.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${javax.servlet.api.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.inject.extensions</groupId>
+				<artifactId>guice-multibindings</artifactId>
+				<version>${guice.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>${commons.logging.version}</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>${testng.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>junit</groupId>
+						<artifactId>junit</artifactId>
+					</exclusion>
+				</exclusions>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.code.findbugs</groupId>
+				<artifactId>jsr305</artifactId>
+				<version>${jsr305.version}</version>
+				<scope>provided</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mockito</groupId>
+				<artifactId>mockito-all</artifactId>
+				<version>${mockito-all.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.powermock</groupId>
+				<artifactId>powermock-api-mockito</artifactId>
+				<version>${powermock-api-mockito.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- Microsoft insights -->
+			<dependency>
+				<groupId>com.microsoft.azure</groupId>
+				<artifactId>applicationinsights-web</artifactId>
+				<!-- or applicationinsights-core for bare API -->
+				<version>1.0.6</version>
+			</dependency>
+
+			<!-- end of microsoft insights dependency -->
+
+			<dependency>
+				<groupId>taplinx-java</groupId>
+				<artifactId>librarymanager</artifactId>
+				<version>${librarymanager.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>taplinx-java</groupId>
+				<artifactId>desfire</artifactId>
+				<version>${desfire.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons.lang.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>javax.el</groupId>
+				<artifactId>javax.el-api</artifactId>
+				<version>${javax.el-api.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven.plugin.compiler.version}</version>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+						<showDeprecation>true</showDeprecation>
+						<showWarnings>true</showWarnings>
+						<fork>true</fork>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>${maven.plugin.enforcer.version}</version>
+					<executions>
+						<execution>
+							<id>enforce-versions</id>
+							<goals>
+								<goal>enforce</goal>
+							</goals>
+							<configuration>
+								<rules>
+									<requireJavaVersion>
+										<version>${java.version}</version>
+									</requireJavaVersion>
+								</rules>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>${maven.plugin.surefire.version}</version>
+					<configuration>
+						<excludedGroups>broken</excludedGroups>
+						<properties>
+							<property>
+								<name>-d</name>
+								<value>target/test-output</value>
+							</property>
+						</properties>
+
+						<!-- Sets the VM argument line used when unit tests are run. -->
+						<argLine>${surefireArgLine}</argLine>
+						<excludes>
+							<exclude>**/IT*.java</exclude>
+						</excludes>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-failsafe-plugin</artifactId>
+					<version>${maven.plugin.failsafe.version}</version>
+					<executions>
+
+						<!-- Ensures that both integration-test and verify goals of the Failsafe 
+							Maven plugin are executed. -->
+						<execution>
+							<id>integration-tests</id>
+							<goals>
+								<goal>integration-test</goal>
+								<goal>verify</goal>
+							</goals>
+							<configuration>
+								<!-- Sets the VM argument line used when integration tests are run. -->
+								<argLine>${failsafeArgLine}</argLine>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>${maven.plugin.jar.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>${maven.plugin.assembly.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-shade-plugin</artifactId>
+					<version>${maven.plugin.shade.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>${maven.plugin.javadoc.version}</version>
+					<configuration>
+						<javaApiLinks>
+							<property>
+								<name>api_1.8</name>
+								<value>http://docs.oracle.com/javase/8/docs/api/</value>
+							</property>
+						</javaApiLinks>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>${maven.plugin.deploy.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>${maven.plugin.resources.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>${maven.plugin.site.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>${maven.plugin.source.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>${maven.plugin.release.version}</version>
+					<configuration>
+						<localCheckout>true</localCheckout>
+						<pushChanges>false</pushChanges>
+					</configuration>
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-api</artifactId>
+							<version>${maven.plugin.scmApi.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.maven.scm</groupId>
+							<artifactId>maven-scm-provider-gitexe</artifactId>
+							<version>${maven.plugin.scmProviderGitExe.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>${maven.plugin.dependency.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>buildnumber-maven-plugin</artifactId>
+					<version>${maven.plugin.buildnumber.version}</version>
+					<executions>
+						<execution>
+							<phase>validate</phase>
+							<goals>
+								<goal>create</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<doCheck>false</doCheck>
+						<doUpdate>false</doUpdate>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>sonar-maven-plugin</artifactId>
+					<version>${sonar.version}</version>
+				</plugin>
+
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>${jacoco.version}</version>
+					<configuration>
+						<append>true</append>
+					</configuration>
+					<executions>
+						<execution>
+							<id>pre-unit-test</id>
+							<goals>
+								<goal>prepare-agent</goal>
+							</goals>
+							<configuration>
+								<propertyName>surefireArgLine</propertyName>
+							</configuration>
+						</execution>
+
+						<execution>
+							<id>post-unit-test</id>
+							<phase>test</phase>
+							<goals>
+								<goal>report</goal>
+							</goals>
+							<configuration>
+								<dataFile>${sonar.jacoco.reportPath}</dataFile>
+							</configuration>
+						</execution>
+
+						<execution>
+							<id>pre-integration-test</id>
+							<phase>pre-integration-test</phase>
+							<goals>
+								<goal>prepare-agent</goal>
+							</goals>
+							<configuration>
+								<destFile>${sonar.jacoco.itReportPath}</destFile>
+								<propertyName>failsafeArgLine</propertyName>
+							</configuration>
+						</execution>
+
+						<execution>
+							<id>post-integration-test</id>
+							<phase>post-integration-test</phase>
+							<goals>
+								<goal>report</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+	</build>
+
+</project>

@@ -1,0 +1,11 @@
+<div class="btn-group bring-dropdown-action-below">
+    <button type="button" class="btn btn-primary btn-primary-dropdown dropdown-toggle btn-sm" data-toggle="dropdown">
+        {{btnDisplayText}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li *ngFor="let actionListItem of actionList">
+            <a href="#" routerLink="{{actionListItem.btn_action}}">{{actionListItem.btn_name}}</a>
+        </li>
+    </ul>
+</div>

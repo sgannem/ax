@@ -1,0 +1,282 @@
+div.card-layout-container {
+
+    min-height: 25vh;
+    padding-bottom: 2vh;
+    margin-top: 2%;
+}
+
+div.card-layout-container > label {
+
+    color: rgba(102, 102, 102, 1);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.width-20p {
+    width: 20%;
+}
+
+div.width-80p {
+    width: 80%;
+}
+
+div.card-layout-table {
+    display: table;
+    width: 100%;
+}
+
+div.card-layout-table > .row {
+    display: table-row;
+}
+
+div.card-layout-table > .row > .cell {
+    display: table-cell;
+}
+
+div.card-layout-table > .row > .cell > .table {
+    display: table;
+}
+
+div.card-layout-table > .row > .cell > .table > .row {
+    display: table-row;
+}
+
+div.card-layout-table > .row > .cell > .table > .row > .cell {
+    display: table-cell;
+}
+
+span.dark-text-for-card-size {
+
+    color: rgba(0, 0, 0, .8);
+    font-size: 15px;
+}
+
+div.partition-width {
+    width: 60%;
+}
+
+div.card-layout-partition-container {
+
+    position: relative;
+
+    border-radius: 5px;
+    background-color: rgba(221, 221, 221, 1);
+    border: 1px solid rgba(153, 153, 153, .2);
+
+    padding: 1% 1%;
+    height: 22vh;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+/* Reserved space starts */
+.reserved-space-width {
+    width: 20%;
+}
+
+div.card-layout-partition-reserved-space {
+
+    width: 98%;
+    padding-top: auto;
+
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgba(147, 196, 125, 1);
+    display: inline-block;
+
+    height: 19vh;
+}
+
+div.card-layout-partition-reserved-space > .add-padding > span.fa {
+
+    font-size: 18px;
+    color: rgba(107, 168, 79, 1);
+}
+
+div.card-layout-partition-reserved-space > .add-padding {
+
+    padding: 1%;
+}
+/* Reserved space ends */
+
+/* Shared space starts */
+div.shared-slot-container > div {
+
+    display: inline-block;
+}
+
+div.card-layout-partition-shared-space {
+
+    width: 96%;
+    padding: 1% 1%;
+
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgba(128, 173, 221, 1);
+    display: inline-block;
+
+    height: 19vh;
+}
+
+div.card-layout-partition-shared-space > .tag-delete-button-s {
+
+    margin-top: 1%;
+
+    width: 100%;
+    height: 16px;
+    text-align: right;
+    padding-right: 1%;
+}
+
+div.card-layout-partition-shared-space > .tag-delete-button-s > span {
+
+    font-size: 16px;
+
+    cursor: pointer;
+    color: rgba(98, 98, 98, 1);
+}
+
+div.card-layout-partition-shared-space > .add-padding {
+
+    padding: 1%;
+}
+
+div.card-layout-partition-shared-space > .add-padding > span.fa {
+
+    font-size: 18px;
+    background-color: rgba(128, 173, 221, 1);
+}
+/* Shared space ends */
+
+/* Dedicated space starts */
+div.dedicated-slot-container > div {
+
+    display: inline-block;
+}
+
+div.card-layout-partition-dedicated-space {
+
+    width: 96%;
+    padding: 1% 1%;
+
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgba(246, 182, 119, 1);
+    display: inline-block;
+
+    height: 19vh;
+}
+
+div.card-layout-partition-dedicated-space > .tag-delete-button-d {
+
+    margin-top: 1%;
+
+    width: 100%;
+    height: 16px;
+    text-align: right;
+    padding-right: 1%;
+}
+
+div.card-layout-partition-dedicated-space > .tag-delete-button-d > span {
+
+    font-size: 16px;
+
+    cursor: pointer;
+    color: rgba(98, 98, 98, 1);
+}
+
+div.card-layout-partition-dedicated-space > .add-padding {
+
+    padding: 1%;
+}
+
+div.card-layout-partition-dedicated-space > .add-padding > span.fa {
+
+    font-size: 18px;
+    background-color: rgba(246, 182, 119, 1);
+}
+/* Dedicated space ends */
+
+/* Unused space starts */
+div.card-layout-partition-unused-space {
+
+    width: 100%;
+    padding: 1% 1%;
+    
+    color: rgba(102, 102, 102, 1);
+    font-size: 13px;
+    border-radius: 5px;
+    border: 2px dashed rgba(255, 255, 255, 1);
+    display: inline-block;
+
+    height: 19vh;
+}
+
+div.card-layout-partition-unused-space > .add-padding {
+
+    padding: 1%;
+}
+/* Unused space ends */
+
+span.slot-eligibility-of-apps {
+
+    font-size: 9px;
+    color: rgba(102, 102, 102, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+	
+	#deleteSharedSlotModal .modal-dialog  {width: 32vw;}
+	#deleteDedicatedSlotModal .modal-dialog  {width: 32vw;}
+}
+
+div.modal-dialog > div.modal-content > form > div.modal-footer {
+
+    border-top: 0px;
+}
+
+div.modal-dialog > div.modal-content > form > div.modal-footer > span.link {
+
+    color: rgba(107, 113, 121, 1);
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.delete-slot-modal > span.slot-info {
+
+    color: rgba(103, 103, 103, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.delete-slot-modal > div.warning-box {
+
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+    background-color: rgba(255, 229, 153, 1);
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 4px;
+}
+
+div.delete-slot-modal > div.warning-box > a {
+
+    color: rgba(0, 0, 0, .5);
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+div.delete-slot-modal > div.warning-box > span.fa-exclamation-triangle {
+
+    color: rgba(191, 144, 0, 1);
+    font-size: 22px;
+}

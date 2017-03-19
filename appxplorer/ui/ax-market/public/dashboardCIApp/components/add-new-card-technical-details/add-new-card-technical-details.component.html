@@ -1,0 +1,47 @@
+<div class="content-wrapper add-vertical-scrollbar style-3">
+    <div class="content-heading bold font-weight-normal">Technical Details:</div><br/>
+
+    <div class="form-group">
+        <label for="" class="bold text-1">Smart medium type</label>
+
+        <div *ngFor="let lookUp of smartMediumTypeList; let lookupFirst=first">
+            <div class="div-element-width">
+                <input id="radio-SmartMediumType-{{ lookUp.id }}" class="radio-custom" name="smartMediumType" type="radio" value="{{ lookUp.id }}" checked>
+                <label for="radio-SmartMediumType-{{ lookUp.id }}" class="radio-custom-label bold">{{ lookUp.name }}</label>
+            </div>
+            <label></label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="" class="bold text-1">Technology used</label>
+
+        <div *ngFor="let lookUp of technologyList">
+            <div class="div-element-width">
+                <input id="radio-TechnologyList-{{ lookUp.id }}" class="radio-custom" name="TechnologyUsed" type="radio" value="{{ lookUp.id }}" checked>
+                <label for="radio-TechnologyList-{{ lookUp.id }}" class="radio-custom-label bold">{{ lookUp.name }}</label>
+            </div>
+            <label></label>
+        </div>
+
+        <div class="basic-information-subtitle-text bold">How to find out about the type of your card</div>
+    </div>
+    <div class="form-group">
+        <label for="" class="bold text-1">Smart medium size</label>
+
+        <div *ngFor="let lookUp of smartMediumSizeList">
+            <div class="div-element-width">
+                <input id="radio-SmartMediumSize-{{ lookUp.id }}" class="radio-custom" name="smartMediumSize" type="radio" value="{{ lookUp.id }}" checked>
+                <label for="radio-SmartMediumSize-{{ lookUp.id }}" class="radio-custom-label bold">{{ lookUp.name }}</label>
+            </div>
+            <label></label>
+        </div>
+
+        <div class="basic-information-subtitle-text bold">How to find out about your smart medium size</div>
+    </div>
+
+    <div class="form-group">
+        <label for="" class="bold text-1">Key A</label>
+        <input type="text" class="form-control input-element-width" />
+    </div><br/>
+
+</div>

@@ -1,0 +1,10 @@
+
+<div class="top-nav-bar">
+  <a href="#" class="non-highlighted-router-link" [routerLink]="['show-pendingrequests']" [queryParams]="{ requestStatus: 'Pending' }" routerLinkActive="highlighted-router-link">Pending Requests</a>
+  <a href="#" class="non-highlighted-router-link" [routerLink]="['show-pendingrequests']" [queryParams]="{ requestStatus: 'Accepted' }" routerLinkActive="highlighted-router-link">Accepted Requests</a>
+  <a href="#" class="non-highlighted-router-link" [routerLink]="['show-pendingrequests']" [queryParams]="{ requestStatus: 'Declined' }" routerLinkActive="highlighted-router-link">Declined Requests</a>
+  <a href="#" class="dark-button move-button-to-right" [routerLink]="['show-create-new-request']"  routerLinkActive="highlighted-router-link"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Create new requests</a>
+
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,78 @@
+.basic-information-subtitle-text {
+    color: rgb(185, 185, 185);
+    font-size: 13px;
+    font-family: "Open Sans";
+}
+
+.div-element-width {
+    border-radius: 10px;
+    width: 50%;
+    outline: 1px solid #ddd;
+    padding: 1px;
+}
+
+.input-element-width {
+    width: 50%;
+}
+
+.text-1 {
+    color: rgba(102, 102, 102, 1);
+}
+
+.radio-custom {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio-custom,
+.radio-custom-label {
+    display: bold;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.radio-custom-label {
+    position: relative;
+    font-family: "Open Sans";
+    font-size: 25;
+}
+
+.radio-custom+.radio-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #3399ff;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.radio-custom+.radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked+.radio-custom-label:before {
+    background: #3399ff;
+    box-shadow: inset 0px 0px 0px 4px #fff;
+}
+
+.radio-custom:checked+.radio-custom-label {
+    background: #DBEAF7;
+    border-radius: 10px;
+    width: 100%;
+    padding: 2px;
+    //outline: 1px solid #ddd;
+    //focus style
+}
+
+.radio-inline-border {
+    border: solid 1px;
+    width: 30%;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-color: #CCCCCC;
+    border-radius: 5px;
+}

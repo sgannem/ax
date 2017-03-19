@@ -1,0 +1,27 @@
+<!--<div class="btn-group">
+	<div class="btn bring-dropdown-action-below">
+	    <button type="button" class="btn btn-primary-dropdown dropdown-toggle btn-sm" data-toggle="dropdown">
+	        {{btnDisplayText}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        <span class="caret"></span>
+	    </button>
+	    <ul class="dropdown-menu" role="menu">
+	        <li *ngFor="let actionListItem of actionList">
+	            <a href="#" routerLink="{{actionListItem.btn_action}}">{{actionListItem.btn_name}}</a>
+	        </li>
+	    </ul>
+	</div>
+</div>-->
+
+<div class = "btn-group bring-dropdown-action-below">
+   <button type = "button" class = "btn btn-primary btn-primary-dropdown">{{btnDisplayText}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+   <button type = "button" class = "btn btn-primary btn-primary-dropdown add-left-border-to-button-drop-down dropdown-toggle" data-toggle = "dropdown">
+      <span class = "caret"></span>
+      <span class = "sr-only">Toggle Dropdown</span>
+   </button>
+   
+   <ul class = "dropdown-menu" role = "menu">
+    <li *ngFor="let actionListItem of actionList">
+        <a class="action-link" href="#" routerLink="{{actionListItem.btn_action}}">{{actionListItem.btn_name}}</a>
+    </li>
+   </ul>
+</div>

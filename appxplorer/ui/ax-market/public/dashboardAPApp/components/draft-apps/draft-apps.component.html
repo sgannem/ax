@@ -1,0 +1,33 @@
+<div class="content-wrapper add-vertical-scrollbar style-3">
+    <div class="content-heading  bold">Drafts & Unpublished Apps</div>
+    <div class="tabulator-container-gray-outline">
+        <div class="tabulator-table width-100p">
+            <div class="tabulator-row background-color">
+                <div class="tabulator-cell bold width">
+                    Name
+                </div>
+                <div class="tabulator-cell bold width">
+                    Completion
+                </div>
+                <div class="tabulator-cell bold width">
+                    Last Modified <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="tabulator-row" *ngFor="let appDetail of appDetails">
+                <div class="tabulator-cell">
+
+                    <div class="cell box-for-card-logo make-it-small-square width"></div>
+                    <div class="cell vertical-middle"> {{appDetail.name}}</div>
+
+                </div>
+                <div class="tabulator-cell width">
+
+                    {{appDetail.completion}}
+                </div>
+                <div class="tabulator-cell width">
+
+                    {{appDetail.updatedOn}}
+                </div>
+            </div>
+        </div>
+    </div>

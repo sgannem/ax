@@ -1,0 +1,6 @@
+<div class="content-wrapper add-vertical-scrollbar style-3">
+    <div class="content-heading bold">Partition Memory:</div><br/>
+    
+    <partition-medium-settings [card-size]="cardSize"></partition-medium-settings>
+    <partition-medium-card-layout (updateCardLayout)="syncDownPartitionSettings($event)"></partition-medium-card-layout>
+</div>

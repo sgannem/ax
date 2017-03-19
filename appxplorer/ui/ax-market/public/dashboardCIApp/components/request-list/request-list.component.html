@@ -1,0 +1,27 @@
+<div class="list-group">
+  <div class="list-group-item border-bottom padding-list-group-item" [class.active]="selected == requestDetail" *ngFor="let requestDetail of requestDetails">
+    <a class=" width" role="presentation" (click)="selectedChange.next(requestDetail)">
+      <div class="table">
+
+        <div class="row">
+
+          <div class="cell width bold">
+            {{requestDetail.appProviderName}}
+          </div>
+          <div class="cell">
+            {{requestDetail.updatedOn}}
+          </div>
+
+        </div>
+        <div class="row">
+
+          <div class="cell">
+            {{requestDetail.app}}
+          </div>
+
+        </div>
+
+      </div>
+    </a>
+  </div>
+</div>

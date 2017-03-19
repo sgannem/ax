@@ -1,0 +1,44 @@
+.bring-dropdown-action-below {
+    margin-top: 10px !important;
+}
+
+.btn {
+	font-size: 12px !important;
+	padding: 5px 8px;
+}
+
+.btn-primary-dropdown {
+    text-align: left;
+
+    color: rgba(50, 50, 50, 0.8) !important;
+    font-weight: bold;
+    background-color: rgb(221, 221, 221) !important;
+    border: 1px solid rgb(221, 221, 221) !important;
+}
+
+.btn-group .dropdown-menu {
+	padding: 5px 5px !important;
+}
+
+.add-left-border-to-button-drop-down {
+	border-left: 1px solid rgba(98, 98, 98, 0.2) !important;
+}
+
+.btn-group .dropdown-menu > li {
+	font-size: 14px;
+	padding: 0px 5px !important;
+}
+
+a.action-link {
+	font-size: 14px;
+	color: rgba(98, 98, 98, 1);
+	text-decoration: none;
+}
+
+.btn-group .dropdown-menu > li:hover {
+	font-size: 14px;
+	color: rgba(98, 98, 98, 1);
+	text-decoration: none;
+
+	background-color: rgba(221, 221, 221, 1);
+}

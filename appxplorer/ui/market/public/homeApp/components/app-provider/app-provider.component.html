@@ -1,0 +1,48 @@
+<h1 class="cover-heading">Become an App Provider.</h1>
+<p class="lead">AppXplorer is a global platform where you can discover different multifunctional smart mediums and applications based on your location.</p>
+<p class="lead">
+  <a href="#" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#signinModalLong">Sign In</a>
+  <a href="#" class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#registerModalLong">Register</a>
+</p>
+
+<!-- SignIn Modal -->
+<div class="modal fade" id="signinModalLong" tabindex="-1" role="dialog" aria-labelledby="signinModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="signinModalLongTitle">Please fill your details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <login [appname]="'ap'"></login>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary left-align">Sign In</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModalLong" tabindex="-1" role="dialog" aria-labelledby="registerModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="registerModalLongTitle">Create an AppXplorer account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <register></register>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary left-align">Create my account</button>
+      </div>-->
+    </div>
+  </div>
+</div>

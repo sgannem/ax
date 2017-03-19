@@ -1,0 +1,41 @@
+
+.account-subtitle-text {
+    color: rgb(185, 185, 185);
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+a.disabled, a.disabled:visited {
+   pointer-events: none;
+   cursor: default;
+   color: dodgerblue;
+}
+
+h1 {
+    color: rgb(51,51,51);
+    font-size: 25px;
+}
+
+label {
+    color: grey;
+}
+
+/*#grayOutDiv
+{
+    background-color: #333;
+    opacity: 0.7;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}*/
+ 
+.flash-message 
+{
+    z-index: 10000;
+    position: relative;
+}
+

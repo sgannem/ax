@@ -1,0 +1,23 @@
+<div class="tabulator-container-gray-outline">
+  <div class="tabulator-table width-100p">
+    <div class="tabulator-row" *ngFor="let rowData of dataJsonArray">
+      <div class="tabulator-cell" *ngFor="let rowDataItem of rowData; let isFirst=first; let isLast=last; let apstIndex=index">
+        <div *ngIf="!isFirst && !isLast">
+          <div *ngIf="apstIndex==1" class="left">
+            {{rowDataItem}}
+          </div>
+          <div *ngIf="apstIndex>1" class="left">
+            {{rowDataItem}}
+          </div>
+        </div>
+        <div *ngIf="isLast" class="right">
+          <div *ngIf="rowDataItem=='R'">
+            <dropdown-action [btn-display-text]="'View Report'" [btn-actions]="[{'btn_name': 'View Report', 'btn_action': '/show-requests'}]"></dropdown-action>
+          </div>
+          <div *ngIf="rowDataItem=='C'">
+            <dropdown-action [btn-display-text]="'Contact App Provider'" [btn-actions]="[{'btn_name': 'Contact App Provider', 'btn_action': '/show-requests'}]"></dropdown-action>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

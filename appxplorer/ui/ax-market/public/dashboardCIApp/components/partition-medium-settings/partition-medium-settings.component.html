@@ -1,0 +1,16 @@
+<div class="partition-settings-container">
+    <form [formGroup]="partitionMediumForm" novalidate>
+        <label class="heading-1 bold" for="reservedSpace">My reserved space</label><br/>
+        <input type="text" id="reservedSpace" class="form-control reserved-space" name="reservedSpace" formControlName="reservedSpace" (keyup)="updateReservedSpaceToMaster($event)" onkeypress="return event.charCode >= 48 && event.charCode <= 57" /><div class="reserved-space-associate-text">Bytes</div><span class="of-card-size-text bold"> of {{cardSize}} Bytes</span>
+        <br/>
+        <span class="small-description bold">The amount of space you want to reserve for your own applications.&nbsp;&nbsp;</span><a href="#" class="bold">Find out more</a>
+        <br/><span *ngIf="!partitionMediumForm.controls.reservedSpace.valid">
+            <div class="isa_error"><span class="fa fa-times-circle"></span>&nbsp;&nbsp;Reserved space cannot be more than {{_maxLimitForReservedSpace}} Bytes.</div>
+        </span>
+        <div [class.hideme]="_reservedSpace<=0">
+            <br/>
+            <partition-medium-slot-widget [slot-type]="'shared'"></partition-medium-slot-widget>
+            <partition-medium-slot-widget [slot-type]="'dedicated'"></partition-medium-slot-widget>
+        </div>
+    </form>
+</div>

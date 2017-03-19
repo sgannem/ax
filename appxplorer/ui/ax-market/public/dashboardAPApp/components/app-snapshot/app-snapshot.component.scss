@@ -1,0 +1,55 @@
+div.box-for-card-logo {
+
+    border-radius: 5px;
+    background-color: rgb(221, 221, 221);
+}
+
+div.make-it-big-square {
+
+    width: 180px;
+    height: 180px;
+}
+
+div.make-it-medium-square {
+
+    width: 150px;
+    height: 150px;
+}
+
+div.adjust-card-details-left-pane {
+    width: 13.5vw;
+}
+
+div.adjust-top-padding {
+    padding-top: 30px !important;
+}
+
+div.adjust-bottom-padding {
+    padding-bottom: 0vh;
+}
+
+div.cardName {
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+div.cardNameSmall {
+    line-height: 24px;
+
+	color: rgb(0, 0, 0);
+	font-size: 12px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+div.updatedOn {
+	color: rgb(185, 185, 185);
+	font-size: 13px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.edit-link{
+    font-size: 13px;
+    color: #4e7fad;
+    font-weight: 600;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <File name="FILE" fileName="logs/ax-entitytest.log">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} [%t] (sid=%X{sessionId}) %X{request}%-5p %c:%L %m%n</Pattern>
+      </PatternLayout>
+    </File>
+
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} [%t] (sid=%X{sessionId}) %X{request}%-5p %c:%L %m%n</Pattern>
+      </PatternLayout>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="org.apache.log4j.xml" level="info"/>
+
+    <Root level="info">
+      <AppenderRef ref="STDOUT"/>
+    </Root>
+    
+     <Root level="debug">
+      <AppenderRef ref="FILE"/>
+    </Root>
+    
+    
+    
+  </Loggers>
+</Configuration>

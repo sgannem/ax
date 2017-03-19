@@ -1,0 +1,92 @@
+div.tabulator-container-gray-outline  {
+
+    padding-bottom: 12px;
+
+    font-size: 14px;
+    color: rgb(51, 51, 51) !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid rgba(221, 221, 221, 1);
+}
+
+div.content-wrapper-no-padding {
+
+	width: 80vw;
+	height: 100%;
+}
+
+.border-right{
+ border-right:  2px solid rgba(221, 221, 221, 1);
+}
+
+.border-bottom {
+    border-width: 80%;
+ border-bottom:  2px solid rgba(221, 221, 221, 1);
+}
+
+.padding-table{
+    padding-top: 10px;
+    padding-bottom:25px;
+    padding-left:10px;
+    border-bottom:  2px solid rgba(221, 221, 221, 1);
+    border-right:  2px solid rgba(221, 221, 221, 1);
+    
+}
+
+.header-padding{
+    padding-bottom: 5px;
+    font-size: 18px
+}
+
+.accepted-table-color{
+background-color: #EDF5EA;
+}
+
+.circle-font-size{
+    font-size: 35px;
+}
+
+.font-size{
+    font-size: 18px;
+}
+
+.pending-table-color{
+background-color: #FEF2E7 ;
+}
+
+.declined-table-color{
+background-color: #FAE6E6;
+}
+
+.right-padding{
+
+    padding-right: 25px;
+}
+
+.buttons-padding{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.anchor-style{
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(51, 51, 51);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+.text-decoration{
+    text-decoration: none;
+}
+
+.italic-padding{
+    font-style: italic;
+    padding-bottom:10px;
+}
+
+.color{
+    color:rgb(98,98,98);
+}

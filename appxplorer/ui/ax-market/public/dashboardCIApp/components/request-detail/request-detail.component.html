@@ -1,0 +1,37 @@
+<div *ngIf="requestDetail">
+     
+      <div class="row">
+            <div class="cell width-30">
+                  <span class="bold">Slot Size:
+      </span> {{requestDetail.slotSize}}
+            </div>
+            <div class="cell width-30">
+                  <span class="bold">Price: </span>{{requestDetail.price}}
+            </div>
+            <div class="cell width-40">
+                  <span class="bold">Exclusivity: </span>{{requestDetail.exclusivity}}
+            </div>
+      </div>
+      <div class="row">
+            <div class="cell width-30">
+                  <span class="bold">Slot type: </span>{{requestDetail.slotType}}
+            </div>
+            <div class="cell width-30">
+                  <span class="bold">App: </span>{{requestDetail.app}}
+            </div>
+            <div class="cell width-40">
+                  <span class="bold">Terms and conditions: </span><a href="" class=" anchor-style right-padding lift-button-up">{{requestDetail.termsandCondition}}</a>
+            </div>
+      </div>
+      <div class="row">
+            <div class="cell width-30">
+                  <span class="bold">Number of Installations: </span>{{requestDetail.numberOfInstallations}}
+            </div>
+            <div class="cell width-30">
+                  <span class="bold">App size: </span>{{requestDetail.appSize}}
+            </div>
+            <div class="cell width-40">
+
+            </div>
+      </div>
+</div>

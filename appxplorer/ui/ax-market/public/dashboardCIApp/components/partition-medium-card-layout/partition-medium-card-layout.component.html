@@ -1,0 +1,174 @@
+<!--Card Size: {{_cardSize}} Bytes<br/>
+Reserved Space: {{_reservedSpace}} Bytes<br/>
+
+Shared Slot: {{_sharedSlotCount}} Bytes<br/>
+Shared Slot Size: {{_sharedSlotSizeEach}} Bytes<br/>
+
+Dedicated Slot: {{_dedicatedSlotCount}} Bytes<br/>
+Dedicated Slot Size: {{_dedicatedSlotSizeEach}} Bytes<br/>-->
+
+<div class="card-layout-container">
+    <label class="heading-1 bold" for="reservedSpace">Your card:</label><br/>
+    <div class="card-layout-table">
+        <div class="row">
+            <div class="cell partition-width">
+
+                <!-- Card layout starts -->
+                <div class="card-layout-partition-container">
+
+                    <div class="card-layout-partition-card-space">
+
+                        <div class="table">
+                            <div class="row">
+                                <div *ngIf="_reservedSpace>0" class="cell left reserved-space-width valign-top">
+                                    <!-- Reserved space starts -->
+                                    <div class="card-layout-partition-reserved-space center">
+                                        <div class="add-padding"><br/><br/><span class="fa fa-lock"></span><br/><span class="bold">Reserved</span><br/>{{_reservedSpace}} Bytes</div>
+                                    </div>
+                                    <!-- Reserved space ends -->
+                                </div>
+                                <div class="cell left valign-top shared-slot-container">
+                                    <!-- Shared space starts -->
+                                    <div *ngFor="let _sharedSlotMaxListInst of _sharedSlotMaxList;let _index=index;" [style.width.%]="_sharedSlotBoxWidth">
+                                        <div *ngIf="_index<_sharedSlotCount" class="card-layout-partition-shared-space center">
+                                            <div class="tag-delete-button-s" [class.vanishme]="(!(_index==(_sharedSlotCount-1)))"><span class="fa fa-trash-o" data-toggle="modal" data-target="#deleteSharedSlotModal"></span></div>
+                                            <div class="add-padding"><br/><br/><span class="bold">Shared</span><br/>{{_sharedSlotSizeEach}} Bytes</div>
+                                        </div>
+                                    </div>
+                                    <!-- Shared space ends -->
+                                </div>
+                                <div class="cell left valign-top dedicated-slot-container">
+                                    <!-- Dedicated space starts -->
+                                    <div *ngFor="let _dedicatedSlotMaxListInst of _dedicatedSlotMaxList;let _index=index;" [style.width.%]="_dedicatedSlotBoxWidth">
+                                        <div *ngIf="_index<_dedicatedSlotCount" class="card-layout-partition-dedicated-space center">
+                                            <div class="tag-delete-button-d" [class.vanishme]="(!(_index==(_dedicatedSlotCount-1)))"><span class="fa fa-trash-o" data-toggle="modal" data-target="#deleteDedicatedSlotModal"></span></div>
+                                            <div class="add-padding"><br/><br/><span class="bold">Dedicated</span><br/>{{_dedicatedSlotSizeEach}} Bytes</div>
+                                        </div>
+                                    </div>
+                                    <!-- Dedicated space ends -->
+                                </div>
+                                <div *ngIf="_availableSpaceOnCard>0" class="cell left valign-top">
+                                    <!-- Unused space starts -->
+                                    <div class="card-layout-partition-unused-space center">
+                                        <div class="add-padding"><br/><br/><span class="bold">Unused</span><br/>{{_availableSpaceOnCard}} Bytes</div>
+                                    </div>
+                                    <!-- Unused space ends -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Card layout ends -->
+
+            </div>
+            <div class="cell width-20p valign-top">
+                <div class="table" *ngIf="_cardSize>_availableSpaceOnCard">
+                    <div class="row">
+                        <div class="cell">&nbsp;&nbsp;&nbsp;&nbsp;<span class="medium-description bold">Smart medium size</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">&nbsp;&nbsp;&nbsp;&nbsp;<span class="dark-text-for-card-size bold">{{_cardSize}} Bytes</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+
+                            <div class="table">
+                                <div class="row">
+                                    <div class="cell" [class.hideme]="(_sharedSlotSizeEach<=0 || _sharedSlotCount<=0)">&nbsp;&nbsp;&nbsp;&nbsp;<span class="medium-description bold">Shared slot</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;{{_sharedSlotCount}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell" [class.hideme]="(_sharedSlotSizeEach<=0 || _sharedSlotCount<=0)">&nbsp;&nbsp;&nbsp;&nbsp;<span class="medium-description bold">Shared Slot Size</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;{{_sharedSlotSizeEach}}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="slot-eligibility-of-apps bold" [class.hideme]="_percentageOfAppsThatCanBeInstalledShared<=0">{{_percentageOfAppsThatCanBeInstalledShared}}% of apps can be installed</span><span class="slot-eligibility-of-apps bold" [class.hideme]="_percentageOfAppsThatCanBeInstalledShared>0"><25% of apps can be installed</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cell">
+
+                            <div class="table">
+                                <div class="row">
+                                    <div class="cell" [class.hideme]="(_dedicatedSlotSizeEach<=0 || _dedicatedSlotCount<=0)">&nbsp;&nbsp;&nbsp;&nbsp;<span class="medium-description bold">Dedicated slot</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;{{_dedicatedSlotCount}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell" [class.hideme]="(_dedicatedSlotSizeEach<=0 || _dedicatedSlotCount<=0)">&nbsp;&nbsp;&nbsp;&nbsp;<span class="medium-description bold">Dedicated Slot Size</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;{{_dedicatedSlotSizeEach}}<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="slot-eligibility-of-apps bold" [class.hideme]="_percentageOfAppsThatCanBeInstalledDedicated<=0">{{_percentageOfAppsThatCanBeInstalledDedicated}}% of apps can be installed</span><span class="slot-eligibility-of-apps bold" [class.hideme]="_percentageOfAppsThatCanBeInstalledDedicated>0"><25% of apps can be installed</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Dedicated slot ends -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <span class="small-description-green bold">Reserved space</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="small-description bold">Reserved for your own card functionality only.</span>&nbsp;<a href="#" class="bold">More about my own space</a><br/>
+    <span class="small-description-blue bold">Shared space</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="small-description bold">Can be sold to app providers. Space it distributed by first come, first serve.</span>&nbsp;<a href="#" class="bold">More about shared space</a><br/>
+    <span class="small-description-orange bold">Dedicated space</span>&nbsp;&nbsp;&nbsp;<span class="small-description bold">Can be sold to app providers. Reserved for a specific app only.</span>&nbsp;<a href="#" class="bold">More about dedicated space</a><br/>
+</div>
+
+<!-- Delete Shared slot confirmation popup starts -->
+<div id="deleteSharedSlotModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteSharedSlotModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <form #sharedSlotDeleteForm="ngForm">
+                <div class="modal-header">
+                    <h5 id="deleteSlotModalLongTitle">Are you sure you want to delete this slot?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body delete-slot-modal">
+                    You are about to delete this slot:<br/><br/>
+
+                    <span class="slot-info bold">Shared slot ......................................................... {{_sharedSlotSizeEach}} Bytes</span><br/><br/>
+                    <div class="warning-box">
+                        <span class="fa fa-exclamation-triangle"></span>&nbsp;&nbsp;Be aware that this is an <b>irreversible action</b>. Apps which are currently installed in this slot are not affected and stay on the card.
+                        <br/><a href="xyz.html" target="_new" class="bold">Learn more about deleting slots.</a>
+                    </div>
+                    <br/>
+                    <span class="slot-info bold">Type DELETE to confirm</span>
+                    <input name="deleteText" [ngModel]="deleteText" type="text" class="form-control" pattern="DELETE" required />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary left-align" data-dismiss="modal" (click)="decrementSharedSlot($event);sharedSlotDeleteForm.reset();" [disabled]="!sharedSlotDeleteForm.form.valid">Delete slot</button>
+                    &nbsp;&nbsp;<span class="link left-align" onclick="$('#deleteSharedSlotModal').modal('hide');">Cancel</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Delete Shared slot confirmation popup ends -->
+
+<!-- Delete Dedicated slot confirmation popup starts -->
+<div id="deleteDedicatedSlotModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="deleteDedicatedSlotModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <form #dedicatedSlotDeleteForm="ngForm">
+                <div class="modal-header">
+                    <h5 id="deleteSlotModalLongTitle">Are you sure you want to delete this slot?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body delete-slot-modal">
+                    You are about to delete this slot:<br/><br/>
+
+                    <span class="slot-info bold">Dedicated slot ......................................................... {{_dedicatedSlotSizeEach}} Bytes</span><br/><br/>
+                    <div class="warning-box">
+                        <span class="fa fa-exclamation-triangle"></span>&nbsp;&nbsp;Be aware that this is an <b>irreversible action</b>. Apps which are currently installed in this slot are not affected and stay on the card.
+                        <br/><a href="xyz.html" target="_new" class="bold">Learn more about deleting slots.</a>
+                    </div>
+                    <br/>
+                    <span class="slot-info bold">Type DELETE to confirm</span>
+                    <input name="deleteText" [ngModel]="deleteText" type="text" class="form-control" pattern="DELETE" required />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary left-align" data-dismiss="modal" (click)="decrementDedicatedSlot($event);dedicatedSlotDeleteForm.reset();" [disabled]="!dedicatedSlotDeleteForm.form.valid">Delete slot</button>
+                    &nbsp;&nbsp;<span class="link left-align" onclick="$('#deleteDedicatedSlotModal').modal('hide');">Cancel</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Delete Dedicated slot confirmation popup ends -->

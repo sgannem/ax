@@ -1,0 +1,65 @@
+div.partition-settings-container {
+
+    min-height: 15vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid rgba(221, 221, 221, 1);
+}
+
+div.partition-settings-container > form > label {
+
+    color: rgba(102, 102, 102, 1);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.partition-settings-container > form > .reserved-space {
+
+    width: 8%;
+    display: inline-block;
+    text-align: right;
+    border-right: 0px solid #ffffff;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+div.partition-settings-container > form > .reserved-space:focus + div {
+
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+div.partition-settings-container > form > .reserved-space:focus {
+
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+div.partition-settings-container > form > .reserved-space + div {
+
+    color: rgba(158, 158, 158, 1);
+    font-size: 1rem;
+    display: inline-block;
+    text-align: right;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+
+    padding-top: 0.35rem;
+    padding-bottom: 0.4rem;
+    padding-right: 0.75rem;
+}
+
+div.partition-settings-container > form > .of-card-size-text {
+
+    color: rgba(65, 65, 65, 1);
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.partition-settings-container > form > .error-message {
+
+    color: #D8000C;
+    font-weight: bold;
+    font-size: 11px;
+}

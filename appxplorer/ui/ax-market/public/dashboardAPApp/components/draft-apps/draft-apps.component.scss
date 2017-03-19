@@ -1,0 +1,57 @@
+div.tabulator-container-gray-outline {
+
+    margin-top: 22px;
+}
+
+div.tabulator-container-gray-outline > div.tabulator-table > div.tabulator-row > div.tabulator-cell {
+
+    padding-bottom: 8px;
+    padding-top: 8px;
+
+    font-size: 14px;
+    color: rgba(98, 98, 98, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top: 2px solid rgba(221, 221, 221, 1);
+}
+
+div.width-100p {
+    width: 100%;
+}
+
+div.tabulator-table {
+    display: table;
+}
+
+div.tabulator-row {
+    display: table-row;
+}
+
+div.tabulator-cell {
+    display: table-cell;
+}
+
+.background-color{
+    background-color: rgba(250, 250, 250,1);
+}
+
+div.box-for-card-logo {
+
+    border-radius: 5px;
+    background-color: rgb(221, 221, 221);
+}
+
+div.make-it-small-square {
+
+    width: 50px;
+    height: 50px;
+}
+
+.width{
+    width:33%
+}
+
+.vertical-middle{
+    vertical-align: middle;
+    padding-left: 10px;
+    
+}

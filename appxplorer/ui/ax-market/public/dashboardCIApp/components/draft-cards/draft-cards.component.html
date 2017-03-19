@@ -1,0 +1,11 @@
+<div class="content-wrapper add-vertical-scrollbar style-3">
+    <div class="content-heading content-heading-underline bold">My Cards</div>
+    <ul class="component-list">
+        <li *ngFor="let cardDetail of cardDetails; let isLast=last" class="pack-horizontal">
+            <card-snapshot [display-mode]="'draft'" [name]="cardDetail.name" [updatedOn]="cardDetail.updatedOn" [spaceLeftOnCardPercent]="cardDetail.spaceLeftOnCardPercent" [showSpaceInformation]="true" [tokenKey]="cardDetail.tokenKey"></card-snapshot>
+            <div *ngIf="isLast">
+                <div class="adjust-bottom-padding-last"></div>
+            </div>
+        </li>
+    </ul>
+</div>

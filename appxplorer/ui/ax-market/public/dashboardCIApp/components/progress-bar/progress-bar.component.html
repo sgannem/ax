@@ -1,0 +1,8 @@
+<div class="progress bring-down-progress-element" [style.width.px]="getWidth()" [style.height.px]="getHeight()">
+    <div class="progress-bar" [style.width.%]="getProgressValue()"></div>
+</div>
+<div *ngIf="showText==true">
+    <div class="bring-down-progress-element">
+        <span class="progressText bold">{{getProgressValue()}}% of my space in use</span>
+    </div>
+</div>

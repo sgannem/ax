@@ -1,0 +1,277 @@
+body {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-y: hidden;
+}
+
+html, body, .container-table {
+    height: 100%;
+}
+
+h5 {
+	color: #505050;
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+div.dashboard-container {
+	min-width: 80vw;
+	height: 100vh;
+	overflow-y: hidden;
+	overflow-x: auto;
+	padding-bottom: 5%;
+}
+
+div.draw-dashboard-border {
+    border-top: 2px solid rgb(51,51,51);
+    border-right: 2px solid rgb(51,51,51);
+}
+
+div.nxp-99px {
+	width: 99px !important;
+	height: 50px !important;
+	background: url('images/nxp99px.jpg') center center no-repeat;
+}
+
+div.pad-dashboard-top {
+	top: 23px;
+}
+
+div.container-table-50 {
+    display: table;
+	width: 40%;
+}
+
+div.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left-align {
+	margin-right: auto;
+}
+
+.auto-align-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right-align {
+    margin-left: auto;
+}
+
+div.auto-align-center-vertical {
+	margin-top: auto;
+}
+
+h5 {
+	font-weight: bold;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: rgb(51, 51, 51) !important;
+}
+
+.control-label {
+	font-weight: bold;
+	color: rgb(102, 102, 102) !important;
+}
+
+.form-group {
+	text-align: left;
+}
+
+.apply-max-width-99 {
+	max-width: 99.999999% !important;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal-header {
+	border-bottom: 0px !important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.form-control-modify {
+	font-weight: bold;
+	color: #505050 !important;
+}
+
+.input-md-modify {
+	font-weight: bold;
+	color: #505050 !important;
+}
+
+.help-text-input-bottom {
+	font-weight: bold;
+	font-size: 12px;
+	color: #b2b2b2 !important;
+}
+
+.width-100p {
+	width: 100%;
+}
+
+span.tnc-link {
+	color: rgb(39, 100, 160);
+	text-decoration: underline;
+}
+
+div.custom-control-description {
+	color: rgb(125, 118, 112) !important;
+}
+
+body.modal-open {
+	text-shadow: 0 0 0;
+}
+
+/** Scrollbar Starts **/
+.style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.style-3::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+/** Scrollbar Ends **/
+
+div.top-nav-bar {
+	background-color: rgb(238, 238, 238);
+	width: 80vw;
+	height: 60px;
+	padding-top: 19px;
+}
+
+div.top-nav-bar > a {
+	color: rgb(102, 102, 102);
+	font-size: 13px;
+	font-weight: bolder;
+	padding-left: 40px;
+	padding-right: 24px;
+	padding-bottom: 19px;
+	text-decoration: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a.non-highlighted-router-link:hover {
+	border-bottom: 4px solid rgb(210, 210, 210);
+}
+
+a.highlighted-router-link {
+	color: rgb(102, 102, 102);
+	border-bottom: 4px solid rgb(210, 210, 210);
+}
+
+a.dark-button {
+	color: #ffffff !important;
+	font-size: 13px;
+	background-color: rgb(102, 102, 102) !important;
+	border-radius: 4px;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.move-button-to-right {
+	float: right;
+	margin-right: 25px !important;
+}
+
+.lift-button-up {
+	margin-bottom: 19px !important;
+}
+
+div.add-vertical-scrollbar {
+	overflow-y: scroll;
+	overflow-x: none;
+}
+
+div.content-wrapper {
+
+	width: 80vw;
+	height: 100vh;
+	padding-top: 28px;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+div.content-wrapper > div.content-heading {
+	color: #000000;
+	font-size: 26px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.content-heading-underline {
+	padding-bottom: 27px;
+	border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+div.table {
+	display: table;
+}
+
+div.row {
+	display: table-row;
+}
+
+div.cell {
+	display: table-cell;
+}
+
+div.remove-right-left-padding {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+div.align-left {
+	float: left;
+}
+
+div.valign-top {
+	vertical-align: top;
+}
+
+ul.component-list {
+	list-style-type: none;
+	padding-left: 0px;
+}

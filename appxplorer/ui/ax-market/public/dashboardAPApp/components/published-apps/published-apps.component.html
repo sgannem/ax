@@ -1,0 +1,11 @@
+<div class="content-wrapper add-vertical-scrollbar style-3">
+    <div class="content-heading content-heading-underline bold">My Apps</div>
+    <ul class="component-list">
+        <li *ngFor="let appDetail of appDetails; let isLast=last">
+            <app-snapshot [display-mode]="'detail'" [name]="appDetail.name" [updatedOn]="appDetail.updatedOn" [spaceLeftOnCardPercent]="appDetail.spaceLeftOnCardPercent" [showSpaceInformation]="true" [tokenKey]="appDetail.tokenKey"></app-snapshot>
+            <div *ngIf="isLast">
+                <div class="adjust-bottom-padding-last"></div>
+            </div>
+        </li>
+    </ul>
+</div>

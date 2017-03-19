@@ -1,0 +1,2500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+	logicalFilePath="ax-insert-country.xml">
+
+	<changeSet author="tg" id="add default country">
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="1" />
+			<column name="countryName" value="Afghanistan" />
+			<column name="alpha2ISOCountry" value="AF" />
+			<column name="alpha3ISOCountry" value="AFG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="2" />
+			<column name="countryName" value="Albania" />
+			<column name="alpha2ISOCountry" value="AL" />
+			<column name="alpha3ISOCountry" value="ALB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="3" />
+			<column name="countryName" value="Algeria" />
+			<column name="alpha2ISOCountry" value="DZ" />
+			<column name="alpha3ISOCountry" value="DZA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="4" />
+			<column name="countryName" value="American Samoa" />
+			<column name="alpha2ISOCountry" value="AS" />
+			<column name="alpha3ISOCountry" value="ASM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="5" />
+			<column name="countryName" value="Andorra" />
+			<column name="alpha2ISOCountry" value="AD" />
+			<column name="alpha3ISOCountry" value="AND" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="6" />
+			<column name="countryName" value="Angola" />
+			<column name="alpha2ISOCountry" value="AO" />
+			<column name="alpha3ISOCountry" value="AGO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="7" />
+			<column name="countryName" value="Anguilla" />
+			<column name="alpha2ISOCountry" value="AI" />
+			<column name="alpha3ISOCountry" value="AIA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="8" />
+			<column name="countryName" value="Antarctica" />
+			<column name="alpha2ISOCountry" value="AQ" />
+			<column name="alpha3ISOCountry" value="ATA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="9" />
+			<column name="countryName" value="Antigua and Barbuda" />
+			<column name="alpha2ISOCountry" value="AG" />
+			<column name="alpha3ISOCountry" value="ATG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="10" />
+			<column name="countryName" value="Argentina" />
+			<column name="alpha2ISOCountry" value="AR" />
+			<column name="alpha3ISOCountry" value="ARG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="11" />
+			<column name="countryName" value="Armenia" />
+			<column name="alpha2ISOCountry" value="AM" />
+			<column name="alpha3ISOCountry" value="ARM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="12" />
+			<column name="countryName" value="Aruba" />
+			<column name="alpha2ISOCountry" value="AW" />
+			<column name="alpha3ISOCountry" value="ABW" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="13" />
+			<column name="countryName" value="Australia" />
+			<column name="alpha2ISOCountry" value="AU" />
+			<column name="alpha3ISOCountry" value="AUS" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="14" />
+			<column name="countryName" value="Austria" />
+			<column name="alpha2ISOCountry" value="AT" />
+			<column name="alpha3ISOCountry" value="AUT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="15" />
+			<column name="countryName" value="Azerbaijan" />
+			<column name="alpha2ISOCountry" value="AZ" />
+			<column name="alpha3ISOCountry" value="AZE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="16" />
+			<column name="countryName" value="Bahamas" />
+			<column name="alpha2ISOCountry" value="BS" />
+			<column name="alpha3ISOCountry" value="BHS" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="17" />
+			<column name="countryName" value="Bahrain" />
+			<column name="alpha2ISOCountry" value="BH" />
+			<column name="alpha3ISOCountry" value="BHR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="18" />
+			<column name="countryName" value="Bangladesh" />
+			<column name="alpha2ISOCountry" value="BD" />
+			<column name="alpha3ISOCountry" value="BGD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="19" />
+			<column name="countryName" value="Barbados" />
+			<column name="alpha2ISOCountry" value="BB" />
+			<column name="alpha3ISOCountry" value="BRB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="20" />
+			<column name="countryName" value="Belarus" />
+			<column name="alpha2ISOCountry" value="BY" />
+			<column name="alpha3ISOCountry" value="BLR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="21" />
+			<column name="countryName" value="Belgium" />
+			<column name="alpha2ISOCountry" value="BE" />
+			<column name="alpha3ISOCountry" value="BEL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="22" />
+			<column name="countryName" value="Belize" />
+			<column name="alpha2ISOCountry" value="BZ" />
+			<column name="alpha3ISOCountry" value="BLZ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="23" />
+			<column name="countryName" value="Benin" />
+			<column name="alpha2ISOCountry" value="BJ" />
+			<column name="alpha3ISOCountry" value="BEN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="24" />
+			<column name="countryName" value="Bermuda" />
+			<column name="alpha2ISOCountry" value="BM" />
+			<column name="alpha3ISOCountry" value="BMU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="25" />
+			<column name="countryName" value="Bhutan" />
+			<column name="alpha2ISOCountry" value="BT" />
+			<column name="alpha3ISOCountry" value="BTN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="26" />
+			<column name="countryName" value="Bolivia" />
+			<column name="alpha2ISOCountry" value="BO" />
+			<column name="alpha3ISOCountry" value="BOL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="27" />
+			<column name="countryName" value="Bonaire" />
+			<column name="alpha2ISOCountry" value="BQ" />
+			<column name="alpha3ISOCountry" value="BES" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="28" />
+			<column name="countryName" value="Bosnia and Herzegovina" />
+			<column name="alpha2ISOCountry" value="BA" />
+			<column name="alpha3ISOCountry" value="BIH" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="29" />
+			<column name="countryName" value="Botswana" />
+			<column name="alpha2ISOCountry" value="BW" />
+			<column name="alpha3ISOCountry" value="BWA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="30" />
+			<column name="countryName" value="Bouvet Island" />
+			<column name="alpha2ISOCountry" value="BV" />
+			<column name="alpha3ISOCountry" value="BVT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="31" />
+			<column name="countryName" value="Brazil" />
+			<column name="alpha2ISOCountry" value="BR" />
+			<column name="alpha3ISOCountry" value="BRA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="32" />
+			<column name="countryName" value="British Indian Ocean Territory" />
+			<column name="alpha2ISOCountry" value="IO" />
+			<column name="alpha3ISOCountry" value="IOT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="33" />
+			<column name="countryName" value="Brunei Darussalam" />
+			<column name="alpha2ISOCountry" value="BN" />
+			<column name="alpha3ISOCountry" value="BRN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="34" />
+			<column name="countryName" value="Bulgaria" />
+			<column name="alpha2ISOCountry" value="BG" />
+			<column name="alpha3ISOCountry" value="BGR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="35" />
+			<column name="countryName" value="Burkina Faso" />
+			<column name="alpha2ISOCountry" value="BF" />
+			<column name="alpha3ISOCountry" value="BFA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="36" />
+			<column name="countryName" value="Burundi" />
+			<column name="alpha2ISOCountry" value="BI" />
+			<column name="alpha3ISOCountry" value="BDI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="37" />
+			<column name="countryName" value="Cambodia" />
+			<column name="alpha2ISOCountry" value="KH" />
+			<column name="alpha3ISOCountry" value="KHM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="38" />
+			<column name="countryName" value="Cameroon" />
+			<column name="alpha2ISOCountry" value="CM" />
+			<column name="alpha3ISOCountry" value="CMR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="39" />
+			<column name="countryName" value="Canada" />
+			<column name="alpha2ISOCountry" value="CA" />
+			<column name="alpha3ISOCountry" value="CAN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="40" />
+			<column name="countryName" value="Cape Verde" />
+			<column name="alpha2ISOCountry" value="CV" />
+			<column name="alpha3ISOCountry" value="CPV" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="41" />
+			<column name="countryName" value="Cayman Islands" />
+			<column name="alpha2ISOCountry" value="KY" />
+			<column name="alpha3ISOCountry" value="CYM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="42" />
+			<column name="countryName" value="Central African Republic" />
+			<column name="alpha2ISOCountry" value="CF" />
+			<column name="alpha3ISOCountry" value="CAF" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="43" />
+			<column name="countryName" value="Chad" />
+			<column name="alpha2ISOCountry" value="TD" />
+			<column name="alpha3ISOCountry" value="TCD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="44" />
+			<column name="countryName" value="Chile" />
+			<column name="alpha2ISOCountry" value="CL" />
+			<column name="alpha3ISOCountry" value="CHL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="45" />
+			<column name="countryName" value="China" />
+			<column name="alpha2ISOCountry" value="CN" />
+			<column name="alpha3ISOCountry" value="CHN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="46" />
+			<column name="countryName" value="Christmas Island" />
+			<column name="alpha2ISOCountry" value="CX" />
+			<column name="alpha3ISOCountry" value="CXR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="47" />
+			<column name="countryName" value="Cocos (Keeling) Islands" />
+			<column name="alpha2ISOCountry" value="CC" />
+			<column name="alpha3ISOCountry" value="CCK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="48" />
+			<column name="countryName" value="Colombia" />
+			<column name="alpha2ISOCountry" value="CO" />
+			<column name="alpha3ISOCountry" value="COL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="49" />
+			<column name="countryName" value="Comoros" />
+			<column name="alpha2ISOCountry" value="KM" />
+			<column name="alpha3ISOCountry" value="COM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="50" />
+			<column name="countryName" value="Congo" />
+			<column name="alpha2ISOCountry" value="CG" />
+			<column name="alpha3ISOCountry" value="COG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="51" />
+			<column name="countryName" value="Democratic Republic of the Congo" />
+			<column name="alpha2ISOCountry" value="CD" />
+			<column name="alpha3ISOCountry" value="COD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="52" />
+			<column name="countryName" value="Cook Islands" />
+			<column name="alpha2ISOCountry" value="CK" />
+			<column name="alpha3ISOCountry" value="COK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="53" />
+			<column name="countryName" value="Costa Rica" />
+			<column name="alpha2ISOCountry" value="CR" />
+			<column name="alpha3ISOCountry" value="CRI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="54" />
+			<column name="countryName" value="Croatia" />
+			<column name="alpha2ISOCountry" value="HR" />
+			<column name="alpha3ISOCountry" value="HRV" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="55" />
+			<column name="countryName" value="Cuba" />
+			<column name="alpha2ISOCountry" value="CU" />
+			<column name="alpha3ISOCountry" value="CUB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="56" />
+			<column name="countryName" value="CuraÃƒÂ§ao" />
+			<column name="alpha2ISOCountry" value="CW" />
+			<column name="alpha3ISOCountry" value="CUW" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="57" />
+			<column name="countryName" value="Cyprus" />
+			<column name="alpha2ISOCountry" value="CY" />
+			<column name="alpha3ISOCountry" value="CYP" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="58" />
+			<column name="countryName" value="Czech Republic" />
+			<column name="alpha2ISOCountry" value="CZ" />
+			<column name="alpha3ISOCountry" value="CZE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="59" />
+			<column name="countryName" value="CÃƒÂ´te d'Ivoire" />
+			<column name="alpha2ISOCountry" value="CI" />
+			<column name="alpha3ISOCountry" value="CIV" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="60" />
+			<column name="countryName" value="Denmark" />
+			<column name="alpha2ISOCountry" value="DK" />
+			<column name="alpha3ISOCountry" value="DNK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="61" />
+			<column name="countryName" value="Djibouti" />
+			<column name="alpha2ISOCountry" value="DJ" />
+			<column name="alpha3ISOCountry" value="DJI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="62" />
+			<column name="countryName" value="Dominica" />
+			<column name="alpha2ISOCountry" value="DM" />
+			<column name="alpha3ISOCountry" value="DMA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="63" />
+			<column name="countryName" value="Dominican Republic" />
+			<column name="alpha2ISOCountry" value="DO" />
+			<column name="alpha3ISOCountry" value="DOM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="64" />
+			<column name="countryName" value="Ecuador" />
+			<column name="alpha2ISOCountry" value="EC" />
+			<column name="alpha3ISOCountry" value="ECU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="65" />
+			<column name="countryName" value="Egypt" />
+			<column name="alpha2ISOCountry" value="EG" />
+			<column name="alpha3ISOCountry" value="EGY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="66" />
+			<column name="countryName" value="El Salvador" />
+			<column name="alpha2ISOCountry" value="SV" />
+			<column name="alpha3ISOCountry" value="SLV" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="67" />
+			<column name="countryName" value="Equatorial Guinea" />
+			<column name="alpha2ISOCountry" value="GQ" />
+			<column name="alpha3ISOCountry" value="GNQ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="68" />
+			<column name="countryName" value="Eritrea" />
+			<column name="alpha2ISOCountry" value="ER" />
+			<column name="alpha3ISOCountry" value="ERI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="69" />
+			<column name="countryName" value="Estonia" />
+			<column name="alpha2ISOCountry" value="EE" />
+			<column name="alpha3ISOCountry" value="EST" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="70" />
+			<column name="countryName" value="Ethiopia" />
+			<column name="alpha2ISOCountry" value="ET" />
+			<column name="alpha3ISOCountry" value="ETH" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="71" />
+			<column name="countryName" value="Falkland Islands (Malvinas)" />
+			<column name="alpha2ISOCountry" value="FK" />
+			<column name="alpha3ISOCountry" value="FLK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="72" />
+			<column name="countryName" value="Faroe Islands" />
+			<column name="alpha2ISOCountry" value="FO" />
+			<column name="alpha3ISOCountry" value="FRO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="73" />
+			<column name="countryName" value="Fiji" />
+			<column name="alpha2ISOCountry" value="FJ" />
+			<column name="alpha3ISOCountry" value="FJI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="74" />
+			<column name="countryName" value="Finland" />
+			<column name="alpha2ISOCountry" value="FI" />
+			<column name="alpha3ISOCountry" value="FIN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="75" />
+			<column name="countryName" value="France" />
+			<column name="alpha2ISOCountry" value="FR" />
+			<column name="alpha3ISOCountry" value="FRA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="76" />
+			<column name="countryName" value="French Guiana" />
+			<column name="alpha2ISOCountry" value="GF" />
+			<column name="alpha3ISOCountry" value="GUF" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="77" />
+			<column name="countryName" value="French Polynesia" />
+			<column name="alpha2ISOCountry" value="PF" />
+			<column name="alpha3ISOCountry" value="PYF" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="78" />
+			<column name="countryName" value="French Southern Territories" />
+			<column name="alpha2ISOCountry" value="TF" />
+			<column name="alpha3ISOCountry" value="ATF" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="79" />
+			<column name="countryName" value="Gabon" />
+			<column name="alpha2ISOCountry" value="GA" />
+			<column name="alpha3ISOCountry" value="GAB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="80" />
+			<column name="countryName" value="Gambia" />
+			<column name="alpha2ISOCountry" value="GM" />
+			<column name="alpha3ISOCountry" value="GMB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="81" />
+			<column name="countryName" value="Georgia" />
+			<column name="alpha2ISOCountry" value="GE" />
+			<column name="alpha3ISOCountry" value="GEO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="82" />
+			<column name="countryName" value="Germany" />
+			<column name="alpha2ISOCountry" value="DE" />
+			<column name="alpha3ISOCountry" value="DEU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="83" />
+			<column name="countryName" value="Ghana" />
+			<column name="alpha2ISOCountry" value="GH" />
+			<column name="alpha3ISOCountry" value="GHA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="84" />
+			<column name="countryName" value="Gibraltar" />
+			<column name="alpha2ISOCountry" value="GI" />
+			<column name="alpha3ISOCountry" value="GIB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="85" />
+			<column name="countryName" value="Greece" />
+			<column name="alpha2ISOCountry" value="GR" />
+			<column name="alpha3ISOCountry" value="GRC" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="86" />
+			<column name="countryName" value="Greenland" />
+			<column name="alpha2ISOCountry" value="GL" />
+			<column name="alpha3ISOCountry" value="GRL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="87" />
+			<column name="countryName" value="Grenada" />
+			<column name="alpha2ISOCountry" value="GD" />
+			<column name="alpha3ISOCountry" value="GRD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="88" />
+			<column name="countryName" value="Guadeloupe" />
+			<column name="alpha2ISOCountry" value="GP" />
+			<column name="alpha3ISOCountry" value="GLP" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="89" />
+			<column name="countryName" value="Guam" />
+			<column name="alpha2ISOCountry" value="GU" />
+			<column name="alpha3ISOCountry" value="GUM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="90" />
+			<column name="countryName" value="Guatemala" />
+			<column name="alpha2ISOCountry" value="GT" />
+			<column name="alpha3ISOCountry" value="GTM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="91" />
+			<column name="countryName" value="Guernsey" />
+			<column name="alpha2ISOCountry" value="GG" />
+			<column name="alpha3ISOCountry" value="GGY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="92" />
+			<column name="countryName" value="Guinea" />
+			<column name="alpha2ISOCountry" value="GN" />
+			<column name="alpha3ISOCountry" value="GIN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="93" />
+			<column name="countryName" value="Guinea-Bissau" />
+			<column name="alpha2ISOCountry" value="GW" />
+			<column name="alpha3ISOCountry" value="GNB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="94" />
+			<column name="countryName" value="Guyana" />
+			<column name="alpha2ISOCountry" value="GY" />
+			<column name="alpha3ISOCountry" value="GUY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="95" />
+			<column name="countryName" value="Haiti" />
+			<column name="alpha2ISOCountry" value="HT" />
+			<column name="alpha3ISOCountry" value="HTI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="96" />
+			<column name="countryName" value="Heard Island and McDonald Mcdonald Islands" />
+			<column name="alpha2ISOCountry" value="HM" />
+			<column name="alpha3ISOCountry" value="HMD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="97" />
+			<column name="countryName" value="Holy See (Vatican City State)" />
+			<column name="alpha2ISOCountry" value="VA" />
+			<column name="alpha3ISOCountry" value="VAT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="98" />
+			<column name="countryName" value="Honduras" />
+			<column name="alpha2ISOCountry" value="HN" />
+			<column name="alpha3ISOCountry" value="HND" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="99" />
+			<column name="countryName" value="Hong Kong" />
+			<column name="alpha2ISOCountry" value="HK" />
+			<column name="alpha3ISOCountry" value="HKG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="100" />
+			<column name="countryName" value="Hungary" />
+			<column name="alpha2ISOCountry" value="HU" />
+			<column name="alpha3ISOCountry" value="HUN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="101" />
+			<column name="countryName" value="Iceland" />
+			<column name="alpha2ISOCountry" value="IS" />
+			<column name="alpha3ISOCountry" value="ISL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="102" />
+			<column name="countryName" value="India" />
+			<column name="alpha2ISOCountry" value="IN" />
+			<column name="alpha3ISOCountry" value="IND" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="103" />
+			<column name="countryName" value="Indonesia" />
+			<column name="alpha2ISOCountry" value="ID" />
+			<column name="alpha3ISOCountry" value="IDN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="104" />
+			<column name="countryName" value="Iran, Islamic Republic of" />
+			<column name="alpha2ISOCountry" value="IR" />
+			<column name="alpha3ISOCountry" value="IRN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="105" />
+			<column name="countryName" value="Iraq" />
+			<column name="alpha2ISOCountry" value="IQ" />
+			<column name="alpha3ISOCountry" value="IRQ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="106" />
+			<column name="countryName" value="Ireland" />
+			<column name="alpha2ISOCountry" value="IE" />
+			<column name="alpha3ISOCountry" value="IRL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="107" />
+			<column name="countryName" value="Isle of Man" />
+			<column name="alpha2ISOCountry" value="IM" />
+			<column name="alpha3ISOCountry" value="IMN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="108" />
+			<column name="countryName" value="Israel" />
+			<column name="alpha2ISOCountry" value="IL" />
+			<column name="alpha3ISOCountry" value="ISR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="109" />
+			<column name="countryName" value="Italy" />
+			<column name="alpha2ISOCountry" value="IT" />
+			<column name="alpha3ISOCountry" value="ITA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="110" />
+			<column name="countryName" value="Jamaica" />
+			<column name="alpha2ISOCountry" value="JM" />
+			<column name="alpha3ISOCountry" value="JAM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="111" />
+			<column name="countryName" value="Japan" />
+			<column name="alpha2ISOCountry" value="JP" />
+			<column name="alpha3ISOCountry" value="JPN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="112" />
+			<column name="countryName" value="Jersey" />
+			<column name="alpha2ISOCountry" value="JE" />
+			<column name="alpha3ISOCountry" value="JEY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="113" />
+			<column name="countryName" value="Jordan" />
+			<column name="alpha2ISOCountry" value="JO" />
+			<column name="alpha3ISOCountry" value="JOR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="114" />
+			<column name="countryName" value="Kazakhstan" />
+			<column name="alpha2ISOCountry" value="KZ" />
+			<column name="alpha3ISOCountry" value="KAZ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="115" />
+			<column name="countryName" value="Kenya" />
+			<column name="alpha2ISOCountry" value="KE" />
+			<column name="alpha3ISOCountry" value="KEN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="116" />
+			<column name="countryName" value="Kiribati" />
+			<column name="alpha2ISOCountry" value="KI" />
+			<column name="alpha3ISOCountry" value="KIR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="117" />
+			<column name="countryName" value="Korea, Democratic People's Republic of" />
+			<column name="alpha2ISOCountry" value="KP" />
+			<column name="alpha3ISOCountry" value="PRK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="118" />
+			<column name="countryName" value="Korea, Republic of" />
+			<column name="alpha2ISOCountry" value="KR" />
+			<column name="alpha3ISOCountry" value="KOR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="119" />
+			<column name="countryName" value="Kuwait" />
+			<column name="alpha2ISOCountry" value="KW" />
+			<column name="alpha3ISOCountry" value="KWT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="120" />
+			<column name="countryName" value="Kyrgyzstan" />
+			<column name="alpha2ISOCountry" value="KG" />
+			<column name="alpha3ISOCountry" value="KGZ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="121" />
+			<column name="countryName" value="Lao People's Democratic Republic" />
+			<column name="alpha2ISOCountry" value="LA" />
+			<column name="alpha3ISOCountry" value="LAO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="122" />
+			<column name="countryName" value="Latvia" />
+			<column name="alpha2ISOCountry" value="LV" />
+			<column name="alpha3ISOCountry" value="LVA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="123" />
+			<column name="countryName" value="Lebanon" />
+			<column name="alpha2ISOCountry" value="LB" />
+			<column name="alpha3ISOCountry" value="LBN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="124" />
+			<column name="countryName" value="Lesotho" />
+			<column name="alpha2ISOCountry" value="LS" />
+			<column name="alpha3ISOCountry" value="LSO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="125" />
+			<column name="countryName" value="Liberia" />
+			<column name="alpha2ISOCountry" value="LR" />
+			<column name="alpha3ISOCountry" value="LBR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="126" />
+			<column name="countryName" value="Libya" />
+			<column name="alpha2ISOCountry" value="LY" />
+			<column name="alpha3ISOCountry" value="LBY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="127" />
+			<column name="countryName" value="Liechtenstein" />
+			<column name="alpha2ISOCountry" value="LI" />
+			<column name="alpha3ISOCountry" value="LIE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="128" />
+			<column name="countryName" value="Lithuania" />
+			<column name="alpha2ISOCountry" value="LT" />
+			<column name="alpha3ISOCountry" value="LTU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="129" />
+			<column name="countryName" value="Luxembourg" />
+			<column name="alpha2ISOCountry" value="LU" />
+			<column name="alpha3ISOCountry" value="LUX" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="130" />
+			<column name="countryName" value="Macao" />
+			<column name="alpha2ISOCountry" value="MO" />
+			<column name="alpha3ISOCountry" value="MAC" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="131" />
+			<column name="countryName" value="Macedonia, the Former Yugoslav Republic of" />
+			<column name="alpha2ISOCountry" value="MK" />
+			<column name="alpha3ISOCountry" value="MKD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="132" />
+			<column name="countryName" value="Madagascar" />
+			<column name="alpha2ISOCountry" value="MG" />
+			<column name="alpha3ISOCountry" value="MDG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="133" />
+			<column name="countryName" value="Malawi" />
+			<column name="alpha2ISOCountry" value="MW" />
+			<column name="alpha3ISOCountry" value="MWI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="134" />
+			<column name="countryName" value="Malaysia" />
+			<column name="alpha2ISOCountry" value="MY" />
+			<column name="alpha3ISOCountry" value="MYS" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="135" />
+			<column name="countryName" value="Maldives" />
+			<column name="alpha2ISOCountry" value="MV" />
+			<column name="alpha3ISOCountry" value="MDV" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="136" />
+			<column name="countryName" value="Mali" />
+			<column name="alpha2ISOCountry" value="ML" />
+			<column name="alpha3ISOCountry" value="MLI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="137" />
+			<column name="countryName" value="Malta" />
+			<column name="alpha2ISOCountry" value="MT" />
+			<column name="alpha3ISOCountry" value="MLT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="138" />
+			<column name="countryName" value="Marshall Islands" />
+			<column name="alpha2ISOCountry" value="MH" />
+			<column name="alpha3ISOCountry" value="MHL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="139" />
+			<column name="countryName" value="Martinique" />
+			<column name="alpha2ISOCountry" value="MQ" />
+			<column name="alpha3ISOCountry" value="MTQ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="140" />
+			<column name="countryName" value="Mauritania" />
+			<column name="alpha2ISOCountry" value="MR" />
+			<column name="alpha3ISOCountry" value="MRT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="141" />
+			<column name="countryName" value="Mauritius" />
+			<column name="alpha2ISOCountry" value="MU" />
+			<column name="alpha3ISOCountry" value="MUS" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="142" />
+			<column name="countryName" value="Mayotte" />
+			<column name="alpha2ISOCountry" value="YT" />
+			<column name="alpha3ISOCountry" value="MYT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="143" />
+			<column name="countryName" value="Mexico" />
+			<column name="alpha2ISOCountry" value="MX" />
+			<column name="alpha3ISOCountry" value="MEX" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="144" />
+			<column name="countryName" value="Micronesia, Federated States of" />
+			<column name="alpha2ISOCountry" value="FM" />
+			<column name="alpha3ISOCountry" value="FSM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="145" />
+			<column name="countryName" value="Moldova, Republic of" />
+			<column name="alpha2ISOCountry" value="MD" />
+			<column name="alpha3ISOCountry" value="MDA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="146" />
+			<column name="countryName" value="Monaco" />
+			<column name="alpha2ISOCountry" value="MC" />
+			<column name="alpha3ISOCountry" value="MCO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="147" />
+			<column name="countryName" value="Mongolia" />
+			<column name="alpha2ISOCountry" value="MN" />
+			<column name="alpha3ISOCountry" value="MNG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="148" />
+			<column name="countryName" value="Montenegro" />
+			<column name="alpha2ISOCountry" value="ME" />
+			<column name="alpha3ISOCountry" value="MNE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="149" />
+			<column name="countryName" value="Montserrat" />
+			<column name="alpha2ISOCountry" value="MS" />
+			<column name="alpha3ISOCountry" value="MSR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="150" />
+			<column name="countryName" value="Morocco" />
+			<column name="alpha2ISOCountry" value="MA" />
+			<column name="alpha3ISOCountry" value="MAR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="151" />
+			<column name="countryName" value="Mozambique" />
+			<column name="alpha2ISOCountry" value="MZ" />
+			<column name="alpha3ISOCountry" value="MOZ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="152" />
+			<column name="countryName" value="Myanmar" />
+			<column name="alpha2ISOCountry" value="MM" />
+			<column name="alpha3ISOCountry" value="MMR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="153" />
+			<column name="countryName" value="Namibia" />
+			<column name="alpha2ISOCountry" value="NA" />
+			<column name="alpha3ISOCountry" value="NAM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="154" />
+			<column name="countryName" value="Nauru" />
+			<column name="alpha2ISOCountry" value="NR" />
+			<column name="alpha3ISOCountry" value="NRU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="155" />
+			<column name="countryName" value="Nepal" />
+			<column name="alpha2ISOCountry" value="NP" />
+			<column name="alpha3ISOCountry" value="NPL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="156" />
+			<column name="countryName" value="Netherlands" />
+			<column name="alpha2ISOCountry" value="NL" />
+			<column name="alpha3ISOCountry" value="NLD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="157" />
+			<column name="countryName" value="New Caledonia" />
+			<column name="alpha2ISOCountry" value="NC" />
+			<column name="alpha3ISOCountry" value="NCL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="158" />
+			<column name="countryName" value="New Zealand" />
+			<column name="alpha2ISOCountry" value="NZ" />
+			<column name="alpha3ISOCountry" value="NZL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="159" />
+			<column name="countryName" value="Nicaragua" />
+			<column name="alpha2ISOCountry" value="NI" />
+			<column name="alpha3ISOCountry" value="NIC" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="160" />
+			<column name="countryName" value="Niger" />
+			<column name="alpha2ISOCountry" value="NE" />
+			<column name="alpha3ISOCountry" value="NER" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="161" />
+			<column name="countryName" value="Nigeria" />
+			<column name="alpha2ISOCountry" value="NG" />
+			<column name="alpha3ISOCountry" value="NGA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="162" />
+			<column name="countryName" value="Niue" />
+			<column name="alpha2ISOCountry" value="NU" />
+			<column name="alpha3ISOCountry" value="NIU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="163" />
+			<column name="countryName" value="Norfolk Island" />
+			<column name="alpha2ISOCountry" value="NF" />
+			<column name="alpha3ISOCountry" value="NFK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="164" />
+			<column name="countryName" value="Northern Mariana Islands" />
+			<column name="alpha2ISOCountry" value="MP" />
+			<column name="alpha3ISOCountry" value="MNP" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="165" />
+			<column name="countryName" value="Norway" />
+			<column name="alpha2ISOCountry" value="NO" />
+			<column name="alpha3ISOCountry" value="NOR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="166" />
+			<column name="countryName" value="Oman" />
+			<column name="alpha2ISOCountry" value="OM" />
+			<column name="alpha3ISOCountry" value="OMN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="167" />
+			<column name="countryName" value="Pakistan" />
+			<column name="alpha2ISOCountry" value="PK" />
+			<column name="alpha3ISOCountry" value="PAK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="168" />
+			<column name="countryName" value="Palau" />
+			<column name="alpha2ISOCountry" value="PW" />
+			<column name="alpha3ISOCountry" value="PLW" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="169" />
+			<column name="countryName" value="Palestine, State of" />
+			<column name="alpha2ISOCountry" value="PS" />
+			<column name="alpha3ISOCountry" value="PSE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="170" />
+			<column name="countryName" value="Panama" />
+			<column name="alpha2ISOCountry" value="PA" />
+			<column name="alpha3ISOCountry" value="PAN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="171" />
+			<column name="countryName" value="Papua New Guinea" />
+			<column name="alpha2ISOCountry" value="PG" />
+			<column name="alpha3ISOCountry" value="PNG" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="172" />
+			<column name="countryName" value="Paraguay" />
+			<column name="alpha2ISOCountry" value="PY" />
+			<column name="alpha3ISOCountry" value="PRY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="173" />
+			<column name="countryName" value="Peru" />
+			<column name="alpha2ISOCountry" value="PE" />
+			<column name="alpha3ISOCountry" value="PER" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="174" />
+			<column name="countryName" value="Philippines" />
+			<column name="alpha2ISOCountry" value="PH" />
+			<column name="alpha3ISOCountry" value="PHL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="175" />
+			<column name="countryName" value="Pitcairn" />
+			<column name="alpha2ISOCountry" value="PN" />
+			<column name="alpha3ISOCountry" value="PCN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="176" />
+			<column name="countryName" value="Poland" />
+			<column name="alpha2ISOCountry" value="PL" />
+			<column name="alpha3ISOCountry" value="POL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="177" />
+			<column name="countryName" value="Portugal" />
+			<column name="alpha2ISOCountry" value="PT" />
+			<column name="alpha3ISOCountry" value="PRT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="178" />
+			<column name="countryName" value="Puerto Rico" />
+			<column name="alpha2ISOCountry" value="PR" />
+			<column name="alpha3ISOCountry" value="PRI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="179" />
+			<column name="countryName" value="Qatar" />
+			<column name="alpha2ISOCountry" value="QA" />
+			<column name="alpha3ISOCountry" value="QAT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="180" />
+			<column name="countryName" value="Romania" />
+			<column name="alpha2ISOCountry" value="RO" />
+			<column name="alpha3ISOCountry" value="ROU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="181" />
+			<column name="countryName" value="Russian Federation" />
+			<column name="alpha2ISOCountry" value="RU" />
+			<column name="alpha3ISOCountry" value="RUS" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="182" />
+			<column name="countryName" value="Rwanda" />
+			<column name="alpha2ISOCountry" value="RW" />
+			<column name="alpha3ISOCountry" value="RWA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="183" />
+			<column name="countryName" value="Reunion" />
+			<column name="alpha2ISOCountry" value="RE" />
+			<column name="alpha3ISOCountry" value="REU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="184" />
+			<column name="countryName" value="Saint Barthelemy" />
+			<column name="alpha2ISOCountry" value="BL" />
+			<column name="alpha3ISOCountry" value="BLM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="185" />
+			<column name="countryName" value="Saint Helena" />
+			<column name="alpha2ISOCountry" value="SH" />
+			<column name="alpha3ISOCountry" value="SHN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="186" />
+			<column name="countryName" value="Saint Kitts and Nevis" />
+			<column name="alpha2ISOCountry" value="KN" />
+			<column name="alpha3ISOCountry" value="KNA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="187" />
+			<column name="countryName" value="Saint Lucia" />
+			<column name="alpha2ISOCountry" value="LC" />
+			<column name="alpha3ISOCountry" value="LCA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="188" />
+			<column name="countryName" value="Saint Martin (French part)" />
+			<column name="alpha2ISOCountry" value="MF" />
+			<column name="alpha3ISOCountry" value="MAF" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="189" />
+			<column name="countryName" value="Saint Pierre and Miquelon" />
+			<column name="alpha2ISOCountry" value="PM" />
+			<column name="alpha3ISOCountry" value="SPM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="190" />
+			<column name="countryName" value="Saint Vincent and the Grenadines" />
+			<column name="alpha2ISOCountry" value="VC" />
+			<column name="alpha3ISOCountry" value="VCT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="191" />
+			<column name="countryName" value="Samoa" />
+			<column name="alpha2ISOCountry" value="WS" />
+			<column name="alpha3ISOCountry" value="WSM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="192" />
+			<column name="countryName" value="San Marino" />
+			<column name="alpha2ISOCountry" value="SM" />
+			<column name="alpha3ISOCountry" value="SMR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="193" />
+			<column name="countryName" value="Sao Tome and Principe" />
+			<column name="alpha2ISOCountry" value="ST" />
+			<column name="alpha3ISOCountry" value="STP" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="194" />
+			<column name="countryName" value="Saudi Arabia" />
+			<column name="alpha2ISOCountry" value="SA" />
+			<column name="alpha3ISOCountry" value="SAU" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="195" />
+			<column name="countryName" value="Senegal" />
+			<column name="alpha2ISOCountry" value="SN" />
+			<column name="alpha3ISOCountry" value="SEN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="196" />
+			<column name="countryName" value="Serbia" />
+			<column name="alpha2ISOCountry" value="RS" />
+			<column name="alpha3ISOCountry" value="SRB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="197" />
+			<column name="countryName" value="Seychelles" />
+			<column name="alpha2ISOCountry" value="SC" />
+			<column name="alpha3ISOCountry" value="SYC" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="198" />
+			<column name="countryName" value="Sierra Leone" />
+			<column name="alpha2ISOCountry" value="SL" />
+			<column name="alpha3ISOCountry" value="SLE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="199" />
+			<column name="countryName" value="Singapore" />
+			<column name="alpha2ISOCountry" value="SG" />
+			<column name="alpha3ISOCountry" value="SGP" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="200" />
+			<column name="countryName" value="Sint Maarten (Dutch part)" />
+			<column name="alpha2ISOCountry" value="SX" />
+			<column name="alpha3ISOCountry" value="SXM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="201" />
+			<column name="countryName" value="Slovakia" />
+			<column name="alpha2ISOCountry" value="SK" />
+			<column name="alpha3ISOCountry" value="SVK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="202" />
+			<column name="countryName" value="Slovenia" />
+			<column name="alpha2ISOCountry" value="SI" />
+			<column name="alpha3ISOCountry" value="SVN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="203" />
+			<column name="countryName" value="Solomon Islands" />
+			<column name="alpha2ISOCountry" value="SB" />
+			<column name="alpha3ISOCountry" value="SLB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="204" />
+			<column name="countryName" value="Somalia" />
+			<column name="alpha2ISOCountry" value="SO" />
+			<column name="alpha3ISOCountry" value="SOM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="205" />
+			<column name="countryName" value="South Africa" />
+			<column name="alpha2ISOCountry" value="ZA" />
+			<column name="alpha3ISOCountry" value="ZAF" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="206" />
+			<column name="countryName" value="South Georgia and the South Sandwich Islands" />
+			<column name="alpha2ISOCountry" value="GS" />
+			<column name="alpha3ISOCountry" value="SGS" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="207" />
+			<column name="countryName" value="South Sudan" />
+			<column name="alpha2ISOCountry" value="SS" />
+			<column name="alpha3ISOCountry" value="SSD" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="208" />
+			<column name="countryName" value="Spain" />
+			<column name="alpha2ISOCountry" value="ES" />
+			<column name="alpha3ISOCountry" value="ESP" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="209" />
+			<column name="countryName" value="Sri Lanka" />
+			<column name="alpha2ISOCountry" value="LK" />
+			<column name="alpha3ISOCountry" value="LKA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="210" />
+			<column name="countryName" value="Sudan" />
+			<column name="alpha2ISOCountry" value="SD" />
+			<column name="alpha3ISOCountry" value="SDN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="211" />
+			<column name="countryName" value="Suriname" />
+			<column name="alpha2ISOCountry" value="SR" />
+			<column name="alpha3ISOCountry" value="SUR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="212" />
+			<column name="countryName" value="Svalbard and Jan Mayen" />
+			<column name="alpha2ISOCountry" value="SJ" />
+			<column name="alpha3ISOCountry" value="SJM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="213" />
+			<column name="countryName" value="Swaziland" />
+			<column name="alpha2ISOCountry" value="SZ" />
+			<column name="alpha3ISOCountry" value="SWZ" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="214" />
+			<column name="countryName" value="Sweden" />
+			<column name="alpha2ISOCountry" value="SE" />
+			<column name="alpha3ISOCountry" value="SWE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="215" />
+			<column name="countryName" value="Switzerland" />
+			<column name="alpha2ISOCountry" value="CH" />
+			<column name="alpha3ISOCountry" value="CHE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="216" />
+			<column name="countryName" value="Syrian Arab Republic" />
+			<column name="alpha2ISOCountry" value="SY" />
+			<column name="alpha3ISOCountry" value="SYR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="217" />
+			<column name="countryName" value="Taiwan, Province of China" />
+			<column name="alpha2ISOCountry" value="TW" />
+			<column name="alpha3ISOCountry" value="TWN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="218" />
+			<column name="countryName" value="Tajikistan" />
+			<column name="alpha2ISOCountry" value="TJ" />
+			<column name="alpha3ISOCountry" value="TJK" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="219" />
+			<column name="countryName" value="United Republic of Tanzania" />
+			<column name="alpha2ISOCountry" value="TZ" />
+			<column name="alpha3ISOCountry" value="TZA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="220" />
+			<column name="countryName" value="Thailand" />
+			<column name="alpha2ISOCountry" value="TH" />
+			<column name="alpha3ISOCountry" value="THA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="221" />
+			<column name="countryName" value="Timor-Leste" />
+			<column name="alpha2ISOCountry" value="TL" />
+			<column name="alpha3ISOCountry" value="TLS" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="222" />
+			<column name="countryName" value="Togo" />
+			<column name="alpha2ISOCountry" value="TG" />
+			<column name="alpha3ISOCountry" value="TGO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="223" />
+			<column name="countryName" value="Tokelau" />
+			<column name="alpha2ISOCountry" value="TK" />
+			<column name="alpha3ISOCountry" value="TKL" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="224" />
+			<column name="countryName" value="Tonga" />
+			<column name="alpha2ISOCountry" value="TO" />
+			<column name="alpha3ISOCountry" value="TON" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="225" />
+			<column name="countryName" value="Trinidad and Tobago" />
+			<column name="alpha2ISOCountry" value="TT" />
+			<column name="alpha3ISOCountry" value="TTO" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="226" />
+			<column name="countryName" value="Tunisia" />
+			<column name="alpha2ISOCountry" value="TN" />
+			<column name="alpha3ISOCountry" value="TUN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="227" />
+			<column name="countryName" value="Turkey" />
+			<column name="alpha2ISOCountry" value="TR" />
+			<column name="alpha3ISOCountry" value="TUR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="228" />
+			<column name="countryName" value="Turkmenistan" />
+			<column name="alpha2ISOCountry" value="TM" />
+			<column name="alpha3ISOCountry" value="TKM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="229" />
+			<column name="countryName" value="Turks and Caicos Islands" />
+			<column name="alpha2ISOCountry" value="TC" />
+			<column name="alpha3ISOCountry" value="TCA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="230" />
+			<column name="countryName" value="Tuvalu" />
+			<column name="alpha2ISOCountry" value="TV" />
+			<column name="alpha3ISOCountry" value="TUV" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="231" />
+			<column name="countryName" value="Uganda" />
+			<column name="alpha2ISOCountry" value="UG" />
+			<column name="alpha3ISOCountry" value="UGA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="232" />
+			<column name="countryName" value="Ukraine" />
+			<column name="alpha2ISOCountry" value="UA" />
+			<column name="alpha3ISOCountry" value="UKR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="233" />
+			<column name="countryName" value="United Arab Emirates" />
+			<column name="alpha2ISOCountry" value="AE" />
+			<column name="alpha3ISOCountry" value="ARE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="234" />
+			<column name="countryName" value="United Kingdom" />
+			<column name="alpha2ISOCountry" value="GB" />
+			<column name="alpha3ISOCountry" value="GBR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="235" />
+			<column name="countryName" value="United States" />
+			<column name="alpha2ISOCountry" value="US" />
+			<column name="alpha3ISOCountry" value="USA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="236" />
+			<column name="countryName" value="United States Minor Outlying Islands" />
+			<column name="alpha2ISOCountry" value="UM" />
+			<column name="alpha3ISOCountry" value="UMI" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="237" />
+			<column name="countryName" value="Uruguay" />
+			<column name="alpha2ISOCountry" value="UY" />
+			<column name="alpha3ISOCountry" value="URY" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="238" />
+			<column name="countryName" value="Uzbekistan" />
+			<column name="alpha2ISOCountry" value="UZ" />
+			<column name="alpha3ISOCountry" value="UZB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="239" />
+			<column name="countryName" value="Vanuatu" />
+			<column name="alpha2ISOCountry" value="VU" />
+			<column name="alpha3ISOCountry" value="VUT" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="240" />
+			<column name="countryName" value="Venezuela" />
+			<column name="alpha2ISOCountry" value="VE" />
+			<column name="alpha3ISOCountry" value="VEN" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="241" />
+			<column name="countryName" value="Viet Nam" />
+			<column name="alpha2ISOCountry" value="VN" />
+			<column name="alpha3ISOCountry" value="VNM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="242" />
+			<column name="countryName" value="British Virgin Islands" />
+			<column name="alpha2ISOCountry" value="VG" />
+			<column name="alpha3ISOCountry" value="VGB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="243" />
+			<column name="countryName" value="US Virgin Islands" />
+			<column name="alpha2ISOCountry" value="VI" />
+			<column name="alpha3ISOCountry" value="VIR" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="244" />
+			<column name="countryName" value="Wallis and Futuna" />
+			<column name="alpha2ISOCountry" value="WF" />
+			<column name="alpha3ISOCountry" value="WLF" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="245" />
+			<column name="countryName" value="Western Sahara" />
+			<column name="alpha2ISOCountry" value="EH" />
+			<column name="alpha3ISOCountry" value="ESH" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="246" />
+			<column name="countryName" value="Yemen" />
+			<column name="alpha2ISOCountry" value="YE" />
+			<column name="alpha3ISOCountry" value="YEM" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="247" />
+			<column name="countryName" value="Zambia" />
+			<column name="alpha2ISOCountry" value="ZM" />
+			<column name="alpha3ISOCountry" value="ZMB" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="248" />
+			<column name="countryName" value="Zimbabwe" />
+			<column name="alpha2ISOCountry" value="ZW" />
+			<column name="alpha3ISOCountry" value="ZWE" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+		<insert tableName="country" dbms="mssql, hsqldb">
+			<column name="id" value="249" />
+			<column name="countryName" value="Aland Islands" />
+			<column name="alpha2ISOCountry" value="AX" />
+			<column name="alpha3ISOCountry" value="ALA" />
+			<column name="isActive" value="Y" />
+			<column name="createdBy" value="${username}" />
+			<column name="creationDate" valueDate="GETUTCDATE()" />
+			<column name="creationTime" valueDate="CONVERT (time, SYSUTCDATETIME())" />
+		</insert>
+	</changeSet>
+</databaseChangeLog>

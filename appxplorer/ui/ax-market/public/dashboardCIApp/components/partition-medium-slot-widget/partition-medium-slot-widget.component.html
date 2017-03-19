@@ -1,0 +1,20 @@
+<form [formGroup]="slotSpaceForm"  novalidate>
+    <div class="slot-space-container">
+        <div class="slot-space" *ngIf="slotType=='shared'" [class.hide-slot-widget-label]="expandWidget" (click)="expandWidget=true;"><span class="fa fa-plus-square"></span>&nbsp;&nbsp;Add shared space</div>
+        <div class="slot-space" *ngIf="slotType=='dedicated'" [class.hide-slot-widget-label]="expandWidget" (click)="expandWidget=true;"><span class="fa fa-plus-square"></span>&nbsp;&nbsp;Add dedicated space</div>&nbsp;&nbsp;<a href="#" [class.hide-slot-widget-label]="expandWidget" class="fa fa-question-circle"></a>
+        <div class="slot-widget-main" *ngIf="expandWidget">
+            <div class="slot-space-heading bold" *ngIf="slotType=='shared'">Add shared space</div>
+            <div class="slot-space-heading bold" *ngIf="slotType=='dedicated'">Add dedicated space</div>
+            <select2 [data]="slotSizeList" [value]="currentSlotValue" (valueChanged)="updateSlotCount($event)" (click)="updateSlotAction($event)"></select2>
+            &nbsp;&nbsp;Slots with each&nbsp;
+            <input type="text" class="form-control slot-space-input" formControlName="slotSizeEach" onkeypress="return event.charCode >= 48 && event.charCode <= 57" /><div class="slot-space-associate-text">Bytes</div>
+            <div class="slot-action-button-group" [class.hideme]="_availableSpace<=0">
+                &nbsp;&nbsp;<span class="dark-button bold" (click)="addSlotSpace($event)">Add spaces</span>
+                &nbsp;&nbsp;or&nbsp;&nbsp;<span class="medium-gray-link" (click)="expandWidget=false;">Cancel</span>
+            </div>
+            <div *ngIf="!_isValidPartitionComponent">
+                <div class="isa_error"><span class="fa fa-times-circle"></span>&nbsp;&nbsp;Invalid card partition. Your partition settings exceeds available space on the card. Please re-visit partiton settings.</div>
+            </div>
+        </div>
+    </div>
+</form>

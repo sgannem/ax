@@ -1,0 +1,30 @@
+div.tabulator-container-gray-outline {
+
+    margin-top: 22px;
+}
+
+div.tabulator-container-gray-outline > div.tabulator-table > div.tabulator-row > div.tabulator-cell {
+
+    padding-bottom: 8px;
+
+    font-size: 14px;
+    color: rgba(98, 98, 98, 1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top: 2px solid rgba(221, 221, 221, 1);
+}
+
+div.width-100p {
+    width: 100%;
+}
+
+div.tabulator-table {
+    display: table;
+}
+
+div.tabulator-row {
+    display: table-row;
+}
+
+div.tabulator-cell {
+    display: table-cell;
+}

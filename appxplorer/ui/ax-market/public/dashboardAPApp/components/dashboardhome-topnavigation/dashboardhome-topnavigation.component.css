@@ -1,0 +1,22 @@
+
+/** complete account dev tag to display text in white color **/
+div#completeAccountDetails {
+   background-color: grey;
+    width: 80vw;
+    height: 60px;
+    padding-top: 19px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+/** Inside account complete div link tag underline and color **/
+div#completeAccountDetails > a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+

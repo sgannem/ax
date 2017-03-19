@@ -1,0 +1,51 @@
+<div class="top-nav-bar">
+    <div class="add-new-card-top-nav-table add-left-right-padding full-width">
+        <div class="add-new-card-nav-row">
+
+            <div class="add-new-card-nav-cell left width-one-third">
+                <a href="#" class="text-1 bold" routerLink="/show-myappd">My Cards</a>&nbsp;
+                <span class="fa fa-angle-right text-2 bold"></span>&nbsp;
+                <span class="text-1">Add a new App</span>
+            </div>
+            <div class="add-new-card-nav-cell center">
+                <span class="fa fa-check-circle-o text-1"></span>&nbsp;
+                <span class="text-1 bold">Changes saved!</span>
+            </div>
+            <div class="add-new-card-nav-cell right">
+                <a href="#" class="text-1 bold" routerLink="/show-myapps">Help</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span id="add-a-new-card-next-link" href="#" class="text-1 bold simulate-link" (click)="saveApplication()">Save &amp; Exit</span>&nbsp;
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="full-height style-3">
+    <router-outlet></router-outlet>
+</div>
+<div class="top-nav-bar">
+    <div class="add-new-card-top-nav-table add-left-right-padding full-width">
+        <div class="add-new-card-nav-row">
+
+            <div class="add-new-card-nav-cell left width-one-third">
+                <div [class.hide-link]="isFirstPage">
+                    <span class="fa fa-angle-left text-2 bold"></span>&nbsp;&nbsp;<span id="add-a-new-card-back-link" href="#" class="text-1 bold simulate-link" (click)="navigateToPage(prevPage)">Back</span>
+                </div>
+            </div>
+            <div class="add-new-card-nav-cell left">
+                <a href="#" class="text-1 bold" (click)="isFirstPage=true;isLastPage=false;prevPage=0;nextPage=1" routerLink="/show-myapps/show-add-new-app/show-add-new-app-nav/show-add-new-app-basic-information" routerLinkActive="text-1-active">Basic Information</a>&nbsp;&nbsp;
+                <span class="fa fa-angle-right text-2 bold"></span>&nbsp;
+                <a href="#" class="text-1 bold" (click)="isFirstPage=false;isLastPage=false;prevPage=0;nextPage=2" routerLink="/show-myapps/show-add-new-app/show-add-new-app-nav/show-add-new-app-marketing" routerLinkActive="text-1-active">Marketing</a>&nbsp;&nbsp;
+                <span class="fa fa-angle-right text-2 bold"></span>&nbsp;
+                <a href="#" class="text-1 bold" (click)="isFirstPage=false;isLastPage=false;prevPage=1;nextPage=3" routerLink="/show-myapps/show-add-new-app/show-add-new-app-nav/show-add-new-app-technical-details" routerLinkActive="text-1-active">Technical</a>&nbsp;&nbsp;
+                <span class="fa fa-angle-right text-2 bold"></span>&nbsp;
+                <a href="#" class="text-1 bold" (click)="isFirstPage=false;isLastPage=true;prevPage=2;nextPage=3" routerLink="/show-myapps/show-add-new-app/show-add-new-app-nav/show-add-new-app-confirm" routerLinkActive="text-1-active">Confirm</a>
+            </div>
+            <div class="add-new-card-nav-cell right">
+                <div [class.hide-link]="isLastPage">
+                    <span id="add-a-new-card-next-link" href="#" class="text-1 bold simulate-link" (click)="navigateToPage(nextPage)">Next</span>&nbsp;&nbsp;<span class="fa fa-angle-right text-2 bold"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

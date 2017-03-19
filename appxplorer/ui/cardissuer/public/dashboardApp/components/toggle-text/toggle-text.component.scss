@@ -1,0 +1,36 @@
+div.displayLink > span.showText {
+	color: rgb(185, 185, 185);
+	font-size: 13px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+}
+
+div.displayLink > span.hideText {
+	color: rgb(185, 185, 185);
+	font-size: 13px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-decoration: underline;
+    cursor: pointer;
+    display: none;
+}
+
+div.unhide-text > span.showText {
+    display: none;
+}
+
+div.unhide-text > span.hideText {
+    display: block !important;
+}
+
+div.displayLink + div.displayText {
+	color: rgb(97, 97, 97);
+	font-size: 12px;
+    text-decoration: none;
+    display: none;
+}
+
+div.unhide-text + div.displayText {
+    display: block !important;
+}

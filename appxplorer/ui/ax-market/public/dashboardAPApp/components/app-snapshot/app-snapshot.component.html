@@ -1,0 +1,61 @@
+<div class="adjust-top-padding adjust-bottom-padding">
+    <div class="table">
+        <div class="row">
+            <div class="cell adjust-card-details-left-pane">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div *ngIf="displayMode=='detail'">
+                                <a href="#" routerLink="../../show-app-desc">
+                                    <div class="box-for-card-logo make-it-big-square"></div>
+                                </a>
+                            </div>
+                            <div *ngIf="displayMode=='draft'">
+                                <div class="box-for-card-logo make-it-medium-square"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row add-top-margin-small" *ngIf="displayMode=='draft'">
+                        <div class="cell cardNameSmall bold">
+                            {{name}}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cell valign-top">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell bold">
+                            <div class="table">
+                                <div class="row">
+                                    <div class="cell cardName bold">
+                                        <div *ngIf="displayMode=='detail'">{{name}}
+                                            <a href="#" class="edit-link" [routerLink]="['../../show-add-new-app']" [queryParams]="{ applicationId: '1' }" routerLinkActive="highlighted-router-link">Edit application</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell updatedOn bold">
+                                        <div *ngIf="displayMode=='detail'">{{updatedOn}}</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="cell bold">
+                                        <div *ngIf="displayMode=='detail'">
+                                            <ap-status-tabulator [data-json-array]="[['REQ_ID_1', 'Card Issuer name', 'Approved', 'R'],
+                                                                    ['REQ_ID_2', 'Card Issuer name', 'Approved', 'R'],
+                                                                    ['REQ_ID_3', 'Card Issuer name', 'Pending', 'C'],
+                                                                    ['REQ_ID_4', 'Card Issuer name', 'Pending', 'R'],
+                                                                    ['REQ_ID_5', 'Card Issuer name', 'Pending', 'C']]"></ap-status-tabulator>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

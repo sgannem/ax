@@ -1,0 +1,24 @@
+// component css goes here
+div.adjust-bottom-padding-last {
+    padding-bottom: 15vh;
+}
+
+li.pack-horizontal {
+    float: left;
+    width: 12.5vw;
+}
+
+div.add-bottom-padding-to-dashboard-overview {
+    padding-bottom: 15vh;
+}
+
+div.displayLink > span.showText {
+	// color: rgb(185, 185, 185);
+    color: black;
+	font-size: 13px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    text-decoration: underline;
+    cursor: pointer;
+    display: block;
+}
+

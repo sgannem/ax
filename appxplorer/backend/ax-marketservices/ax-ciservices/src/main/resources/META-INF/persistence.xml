@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+
+  <persistence-unit name="appxplorer">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <non-jta-data-source>java://comp/env/jdbc/appxplorer</non-jta-data-source>
+    	<class>com.nxp.appxplorer.entity.AccountType</class>
+		<class>com.nxp.appxplorer.entity.PasswordType</class>
+		<class>com.nxp.appxplorer.entity.LoginType</class>
+		<class>com.nxp.appxplorer.entity.AccountStatus</class>
+		<class>com.nxp.appxplorer.entity.UserRole</class>
+		<class>com.nxp.appxplorer.entity.UserPrivileges</class>
+		<class>com.nxp.appxplorer.entity.UserRolePrivileges</class>
+		<class>com.nxp.appxplorer.entity.LoginDetails</class>
+		<class>com.nxp.appxplorer.entity.LoginTokenDetails</class>
+		<class>com.nxp.appxplorer.entity.BusinessSegment</class>
+		<class>com.nxp.appxplorer.entity.Card</class>
+		<class>com.nxp.appxplorer.entity.CardIssuer</class>
+		<class>com.nxp.appxplorer.entity.CardIssuerTnc</class>
+		<class>com.nxp.appxplorer.entity.RegistrationStatus</class>
+		<class>com.nxp.appxplorer.entity.SmartMediumSize</class>
+		<class>com.nxp.appxplorer.entity.SmartMediumType</class>
+		<class>com.nxp.appxplorer.entity.TechnologyUsed</class>
+		<class>com.nxp.appxplorer.entity.ApplicationProvider</class>
+		<class>com.nxp.appxplorer.entity.ApplicationProviderTnc</class>
+		<class>com.nxp.appxplorer.entity.Application</class>
+		<class>com.nxp.appxplorer.entity.Country</class>
+		<class>com.nxp.appxplorer.entity.AddressType</class>
+		<class>com.nxp.appxplorer.entity.CIAddress</class>
+		<class>com.nxp.appxplorer.entity.APAddress</class>
+		<class>com.nxp.appxplorer.entity.AccountStatus</class>
+    <properties>
+      <property name="hibernate.hbm2ddl.auto" value="validate"/>
+      <!-- <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL94Dialect"/> -->
+      <property name="hibernate.dialect" value ="org.hibernate.dialect.SQLServerDialect"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <!-- <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/> -->
+      <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="hibernate.id.new_generator_mappings" value="true"/>
+
+      <!--TODO-->
+      <!--<property name="hibernate.cache.use_second_level_cache" value="true"/>-->
+      <!--<property name="hibernate.cache.use_query_cache" value="true"/>-->
+      <!--<property name="hibernate.cache.provider_class" value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>-->
+      <!--<property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory"/>-->
+
+    </properties>
+  </persistence-unit>
+</persistence>
